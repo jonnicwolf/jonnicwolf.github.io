@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles_index.css">
 
     <script src="/js/index.js" defer></script>
     <title>Jon Narine</title>
 </head>
 <body>
+
     <div id='inner-body-box'>
 
+        <img src="" alt="headshot img" id="headshot-img">
         <h1 id="header">animate gov name and nick name</h1>
 
-        button
+        <input type="range" name="sicko mode" id="mode-slider">
 
         <!-- this is gonna "follow" the page in the center of the y-axis -->
         <!-- it contains a drop menu with the li as buttons that take you to a different part of the page -->
@@ -28,7 +31,6 @@
             </ul>             -->
         <nav>
         
-        <img src="" alt="headshot" id="headshot-img">
         <!-- also changes photos in a loop -->
 
         <div class="carousel">
@@ -48,36 +50,30 @@
             <div class="slideshow-container">
               <div class="mySlides fade">
                 <div class="numbertext">
-                    <span>...</span>
-                    <span>...</span>
-                    <span>...</span>
+                    <span>...</span>                    
                 </div>
                   <img src="" style="width:100%">
-                  <div class="text">Caption Text</div>
+                  <div class="text">Intro</div>
                 </div>
       
                 <div class="mySlides fade">
                   <div class="numbertext">
-                      <span>...</span>
-                      <span>...</span>
-                      <span>...</span>
+                      <span>...</span>                      
                   </div>
                   <img src="" style="width:100%">
-                  <div class="text">Caption Two</div>
+                  <div class="text">Background</div>
                 </div>
                 
                 <div class="mySlides fade">
                   <div class="numbertext">
-                      <span>...</span>
-                      <span>...</span>
-                      <span>...</span>
+                      <span>...</span>                      
                   </div>
                   <img src="" style="width:100%">
-                  <div class="text">Caption Three</div>
+                  <div class="text">Values</div>
                 </div>
 
-                  <a class="back" onclick="slideToDaLeft(-1)">&#10094;</a>
-                  <a class="next" onclick="slideToDaRight(1)">&#10095;</a>
+                  <a class="back" onclick="slideToDaLeft(-1)">&#10094;<span>&#10094;</span></a>
+                  <a class="next" onclick="slideToDaRight(1)">&#10095;<span>&#10095;</span></a>
               </div><!--slideshow-container</!-->
               <br>
               <div style="text-align:center">
@@ -85,10 +81,42 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
               </div>
-            </div><!--.slideshow-container</!-->
-          </section><!--#slides</!-->
-          </div><!--.bdblk</!-->        
 
+              
+            </div><!--.slideshow-container</!-->
+        </section><!--#slides</!-->
+    </div><!--.bdblk</!-->
+
+    <section id="skills">
+        <div class='skills-table-container'>
+            <table style='width: 100%'>
+                <tr>
+                    <td><img src="" alt=""></td>
+                    <td><img src="" alt=""></td>
+                    <td><img src="" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt=""></td>
+                    <td><img src="" alt=""></td>
+                    <td><img src="" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="" alt=""></td>
+                    <td><img src="" alt=""></td>
+                    <td><img src="" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <table style="width: 100%">
+            <tr>
+                <td> <img src="" alt=""> <a href="http://"/> </td>
+                <td> <img src="" alt=""> <a href="http://"/> </td>
+            </tr>
+        </table>
+    </section>
 
 
 

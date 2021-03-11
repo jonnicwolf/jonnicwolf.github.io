@@ -23,8 +23,16 @@ const projectObj = {
 const header = document.querySelector('#header')
 const govName = 'Jon Narine'
 const nickName = 'Fezz'
+
+const slides = document.querySelector('.mySlides')
+
 const documentHeight = document.documentElement.scrollHeight - window.innerHeight
 const scrollHeight = window.scrollY
+
+const carousel = document.createElement('section')
+carousel.innerHTML = '<div class="slideshow-container"><div class="slides fade"><div class="location-dot">...</div></div></div>' 
+//make a loop that will generate the amount of slides you need
+
 
 header.textContent = govName
 console.log(`${header.textContent} header here`)
@@ -43,11 +51,51 @@ const nameSwitch = () => {
 //names should swap every 4000 but switch on toggle button click
 setInterval(nameSwitch, 4000)
 
-//
+let slideIndex = 1;
+const showSlides = (n) => {
+    // let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+  for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+showSlides(slideIndex);
+
+const plusSlides = (n) => {
+  showSlides(slideIndex += n);
+}
+const currentSlide = (n) => {
+  showSlides(slideIndex = n);
+}
+
+
+document.addEventListener(input, )
 
 
 
+//mode slider
 
+const rangeVal = document.querySelector('#mode-slider').value
+console.log(`${rangeVal} rangeVal here`)
+const slideWorks = () => {
+    const slide = querySelector('#mode-slider')
+    Object.assign(slide, { min: '1', max: '10' })
+    if (rangeVal) {
+        
+    }
+}
 
 
 

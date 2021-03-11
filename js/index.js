@@ -1,3 +1,25 @@
+const aboutMeObj = {
+    slide1Content: 'My name is Jon, but there are a million Jons around so call me Fezz!',
+    slide2Content: 'I was born in a small South American country called Guyana to a Soldier dad and a Geologist mom. I love cricket, Formula 1, coding, IndyCar, mountain biking, coding, boxing, and programming =D !',
+    slide3Content: 'I am kind, conscientious, direct, and I love working with others! None of us is as smart as all of us.'
+};
+
+const skillsObj = {
+    slide1Content: {language: 'Javascript', image: 'javascript png'},
+    slide2Content: {language: 'HTML5', image: 'HTML5 png'},
+    slide3Content: {language: 'CSS', image: 'CSS png'},
+    slide4Content: {language: 'node.js', image: 'node.js'},
+    slide5Content: {language: 'react', image: 'react png'},
+    slide5Content: {language: 'Command Line', image: 'commandline png'}
+};
+
+const projectObj = {
+    slide1Content: { gif:'dragonrend png', content: 'blah'},
+    slide2Content: '',
+    slide3Content: ''
+};
+
+
 const header = document.querySelector('#header')
 const govName = 'Jon Narine'
 const nickName = 'Fezz'

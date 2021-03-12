@@ -29,20 +29,20 @@ const slides = document.querySelector('.mySlides')
 const documentHeight = document.documentElement.scrollHeight - window.innerHeight
 const scrollHeight = window.scrollY
 
-const carousel = document.createElement('section')
-carousel.innerHTML = '<div class="slideshow-container"><div class="slides fade"><div class="location-dot">...</div></div></div>' 
+// const carousel = document.createElement('section')
+// carousel.innerHTML = '<div class="slideshow-container"><div class="slides fade"><div class="location-dot">...</div></div></div>' 
 //make a loop that will generate the amount of slides you need
 
 
 header.textContent = govName
-console.log(`${header.textContent} header here`)
+// console.log(`${header.textContent} header here`)
 header.setAttribute('style','font-family: Bungee Shade; font-size: 48px')  
 
 const nameSwitch = () => {
     if (header.textContent === govName) {
         header.textContent = nickName
         //name should switch on click to the toggle button then content switch
-        //add a fade animation that goes from opacity: 0 --> 1 --> 0 in 4000
+        
     } else {
         header.textContent = govName        
     }    
@@ -65,7 +65,7 @@ const showSlides = (n) => {
   for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-  for (i = 0; i < dots.length; i++) {
+  for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
@@ -73,17 +73,12 @@ const showSlides = (n) => {
 }
 showSlides(slideIndex);
 
-const plusSlides = (n) => {
+const slideToDa= (n) => {
   showSlides(slideIndex += n);
 }
 const currentSlide = (n) => {
   showSlides(slideIndex = n);
 }
-
-
-document.addEventListener(input, )
-
-
 
 //mode slider
 
@@ -91,9 +86,12 @@ const rangeVal = document.querySelector('#mode-slider').value
 console.log(`${rangeVal} rangeVal here`)
 const slideWorks = () => {
     const slide = querySelector('#mode-slider')
-    Object.assign(slide, { min: '1', max: '10' })
-    if (rangeVal) {
-        
+    Object.assign(slide, { min: '1', max: '100' })
+    if (rangeVal <=50) {
+        //change colour scheme, resume, and projects
+        //<=50 is also default
+    } else {
+        //change colour scheme, resume and projects
     }
 }
 

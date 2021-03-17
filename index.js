@@ -65,9 +65,7 @@ const showSlides = (n) => {
   for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-  for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-  }
+  
   slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
@@ -82,18 +80,7 @@ const currentSlide = (n) => {
 
 //mode slider
 
-const rangeVal = document.querySelector('#mode-slider').value
-console.log(`${rangeVal} rangeVal here`)
-const slideWorks = () => {
-    const slide = querySelector('#mode-slider')
-    Object.assign(slide, { min: '1', max: '100' })
-    if (rangeVal <=50) {
-        //change colour scheme, resume, and projects
-        //<=50 is also default
-    } else {
-        //change colour scheme, resume and projects
-    }
-}
+
 
 
 

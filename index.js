@@ -1,83 +1,104 @@
-const aboutMeObj = {
-    slide1Content: 'My name is Jon, but there are a million Jons around so call me Fezz!',
-    slide2Content: 'I was born in a small South American country called Guyana to a Soldier dad and a Geologist mom. I love cricket, Formula 1, coding, IndyCar, mountain biking, coding, boxing, and programming =D !',
-    slide3Content: 'I am kind, conscientious, direct, and I love working with others! None of us is as smart as all of us.'
-};
+const headshotObj = [
+  { shot: '/photo_assets/5A06D71D-808D-4825-B692-F5C79E6D89B8.jpg' },
+  { shot: '/photo_assets/IMG_1062.jpeg' },
+  { shot: '/photo_assets/IMG_1948.jpeg' },
+  { shot: '/photo_assets/IMG_0830.jpeg' },  
+];
 
-const skillsObj = {
-    slide1Content: {language: 'Javascript', image: 'javascript png'},
-    slide2Content: {language: 'HTML5', image: 'HTML5 png'},
-    slide3Content: {language: 'CSS', image: 'CSS png'},
-    slide4Content: {language: 'node.js', image: 'node.js'},
-    slide5Content: {language: 'react', image: 'react png'},
-    slide5Content: {language: 'Command Line', image: 'commandline png'}
-};
+// const headshotLoop = () => {
+//   const headshot = document.querySelector('#headshot-wrap')
+//   const img = document.createElement('img')
+//   headshot.innerHTML = ''
+//   headshot.appendChild(img)
+//   for (let i = 0; i <= headshotObj.length; i++) {    
+//     // img.src = headshotObj[i].shot
+//     console.log(img)
+//     setTimeout(() => img.src = headshotObj[i].shot, 1500)    
+//   }
+// }
+//setInterval(headshotLoop,1500)
 
-const projectObj = {
-    slide1Content: { gif:'dragonrend png', content: 'blah'},
-    slide2Content: '',
-    slide3Content: ''
-};
+const aboutMeObj = [
+    { slide1Content: 'My name is Jon, but there are a million Jons around so call me Fezz!' },
+    { slide2Content: 'I was born in a small South American country called Guyana to a Soldier dad and a Geologist mom. I love cricket, Formula 1, coding, IndyCar, mountain biking, coding, boxing, and programming =D !' },
+    { slide3Content: 'I am kind, conscientious, direct, and I love working with others! None of us is as smart as all of us.'}
+];
 
+const skillsObj = [
+    {language: 'Javascript', image: 'javascript png'},
+    {language: 'HTML5', image: 'HTML5 png'},
+    {language: 'CSS', image: 'CSS png'},
+    {language: 'node.js', image: 'node.js'},
+    {language: 'react', image: 'react png'},
+    {language: 'Command Line', image: 'commandline png'}
+];
+
+const projectObj = [
+    { gif:'dragonrend png', content: 'blah'},
+];
 
 const header = document.querySelector('#header')
-const govName = 'Jon Narine'
-const nickName = 'Fezz'
+const govName = 'Jon Narine.dev'
+const nickName = 'Fezz.shake'
 
 const slides = document.querySelector('.mySlides')
 
 const documentHeight = document.documentElement.scrollHeight - window.innerHeight
 const scrollHeight = window.scrollY
 
-// const carousel = document.createElement('section')
-// carousel.innerHTML = '<div class="slideshow-container"><div class="slides fade"><div class="location-dot">...</div></div></div>' 
-//make a loop that will generate the amount of slides you need
-
-
 header.textContent = govName
-// console.log(`${header.textContent} header here`)
 header.setAttribute('style','font-family: Bungee Shade; font-size: 48px')  
 
+//names should swap every 4000 but switch on toggle button click
 const nameSwitch = () => {
     if (header.textContent === govName) {
-        header.textContent = nickName
-        //name should switch on click to the toggle button then content switch
-        
+      header.textContent = nickName
+      //name should switch on click to the toggle button then content switch
     } else {
         header.textContent = govName        
     }    
 }
 
-//names should swap every 4000 but switch on toggle button click
 setInterval(nameSwitch, 4000)
 
+//modified from https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 1;
-const showSlides = (n) => {
-    // let i;
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
+const showSlides = (n) => {    
+  const slides = document.getElementsByClassName("mySlides");
   if (n > slides.length) {
     slideIndex = 1
-  }
-  if (n < 1) {
+  } else if (n < 1) {
     slideIndex = slides.length
   }
+  
   for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-    }
-  
-  slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+  }  
+  slides[slideIndex-1].style.display = "block";    
 }
 showSlides(slideIndex);
 
-const slideToDa= (n) => {
-  showSlides(slideIndex += n);
-}
-const currentSlide = (n) => {
-  showSlides(slideIndex = n);
-}
+const slideToDa= (n) => { showSlides(slideIndex += n) }
+const currentSlide = (n) => { showSlides(slideIndex = n) }
 
+
+//auto run carousel
+const skillShow = () => {
+  let slideIndex = 0;  
+  const slides = document.getElementsByClassName("skillSlides");
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  console.log(slides.length)
+  
+  slides[slideIndex-1].style.display = "block";  
+  
+  setTimeout(skillShow, 2000); 
+}
+skillShow();
 //mode slider
 
 

@@ -61,6 +61,12 @@ const nameSwitch = () => {
 
 setInterval(nameSwitch, 4000)
 
+
+
+
+
+
+
 //modified from https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 1;
 const showSlides = (n) => {    
@@ -81,25 +87,6 @@ showSlides(slideIndex);
 const slideToDa= (n) => { showSlides(slideIndex += n) }
 const currentSlide = (n) => { showSlides(slideIndex = n) }
 
-
-//auto run carousel
-const skillShow = () => {
-  let slideIndex = 0;  
-  const slides = document.getElementsByClassName("skillSlides");
-  
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-  console.log(slides.length)
-  
-  slides[slideIndex-1].style.display = "block";  
-  
-  setTimeout(skillShow, 2000); 
-}
-skillShow();
-//mode slider
 
 
 

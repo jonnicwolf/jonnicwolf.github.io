@@ -1,19 +1,20 @@
-/* body {
-    background: green;
-    color: crimson;
-} */
+body {
+    background: #0C0529;
+    color: #FF0000;
+}
 
 #contacts ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;    
     top:0;
+    position:sticky;
 }
 
 #contacts li {
 float: right;
 padding: 15px 15px;
-position: sticky;
+/* position: sticky; */
 }
 
 #contacts a {
@@ -25,16 +26,25 @@ font-size: 30px;
  color: gold;
 }
 
+#resume {
+position: relative;
+
+}
+
 /* The actual timeline (the vertical ruler)*/
 .container {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     height: 150px;    
 }
 
 .timeline {
-position: relative;
-max-width: 1200px;
-margin: 0 auto;
+position: absolute;
+left: calc(50% - 5px);
+/* max-width: 1000px; */
+width: 10px;
+height: 100%;
+/* margin: 0 auto; */
+background-color: crimson;
 } 
 
 /* The actual timeline (the vertical ruler) */
@@ -47,6 +57,10 @@ bottom: 0;
 left: 50%;
 margin-left: -3px;
 color: crimson;
+}
+
+.timeline h2 a {
+text-decoration-line: none;
 }
 
 /* Container around content */
@@ -86,7 +100,7 @@ left: 50%;
 }
 
 /* Add arrows to the left container (pointing right) */
-.left::before {
+/* .left::before {
 content: " ";
 height: 0;
 position: absolute;
@@ -97,10 +111,10 @@ right: 30px;
 border: medium solid white;
 border-width: 10px 0 10px 10px;
 border-color: transparent transparent transparent white;
-}
+} */
 
 /* Add arrows to the right container (pointing left) */
-.right::before {
+/* .right::before {
 content: " ";
 height: 0;
 position: absolute;
@@ -111,7 +125,7 @@ left: 30px;
 border: medium solid white;
 border-width: 10px 10px 10px 0;
 border-color: transparent white transparent transparent;
-}
+} */
 
 /* Fix the circle for containers on the right side */
 .right::after {
@@ -124,28 +138,54 @@ padding: 20px 30px;
 background-color: gold;
 position: relative;
 border-radius: 6px;
+
 }
 
-.skillSlides {display: none;}
-i {
-vertical-align: middle;
-font-size: 200px;
+#skills {
+display: flex;
+justify-content: center;
+}
+.skills-container {
+display: flex;
+margin-top: 200px;
+width: 500px;
+justify-content: center;
+
+/* max-width: 1000px;
+position: relative;
+margin: auto;
+padding: 105px;
+margin-top: 50px; */
+}
+
+#skills i {
+font-size: 50px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vertical-align: middle;
+font-size: 100px;
 padding: 15px;
-
-
+line-height: 1.2;
+right: 20%; */
 }
-
 
 /* Slideshow container */
-.skills-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 
 .active {
   background-color: #717171;
 }
+
 
 /* Fading animation */
 .fade {
@@ -155,12 +195,12 @@ padding: 15px;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade1 {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-@keyframes fade {
+@keyframes fade1 {
   from {opacity: .4} 
   to {opacity: 1}
 }

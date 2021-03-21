@@ -25,6 +25,7 @@ text-decoration: none;
 font-size: 30px;    
  color: gold;
 }
+
 /* make a semi circle */
 #nav-btn {
 height: 200px;
@@ -48,8 +49,9 @@ grid-row-end: 4;
 }
 
 #semi-circle-btn:hover {
-
+background-color: crimson;
 }
+
 /* turn list items right side up */
 #nav-btn ul{
 list-style-type: none;
@@ -64,7 +66,6 @@ margin-left: 50px;
 word-wrap: normal;
 font-family: 'Bungee Hairline', cursive;
 text-decoration-line: none;
-
 color: crimson;
 padding: 5px;
 }
@@ -76,9 +77,10 @@ grid-column:1 ;
 grid-row: 1/4 ;
 }
 
-.nav-option:hover {
+
+#nav-btn a:hover {
+font-family: 'Bungee Hairline', cursive;
 background-color: gold;
-font-weight: bold;
 border: 2px solid crimson;
 }
 
@@ -100,7 +102,6 @@ grid-row: 3/4;
 grid-column: 1;
 grid-row: 4/4;
 }
-
 
 #resume {
 position: relative;

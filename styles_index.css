@@ -25,35 +25,85 @@ text-decoration: none;
 font-size: 30px;    
  color: gold;
 }
-
+/* make a semi circle */
 #nav-btn {
+height: 200px;
+width: 200px;
 display: grid;
-grid-template-columns: [sect-btn]50px [menu-btn]50px;
+grid-template-columns: [sect-btn]100px [menu-btn]100px;
 grid-template-rows: repeat(4, 25% [row]);
+justify-items: stretch;
+}
+
+#semi-circle-btn {
 background-color: gold;
 position:sticky; 
-/* top: 50%; 
-left: 50%;  */
 height: 50px; 
 width: 100px; 
 border-radius: 50px 50px 0 0; 
-transform: rotate(270deg)
-
+transform: rotate(270deg);
+grid-column: 2;
+grid-row-start: 2; 
+grid-row-end: 4;
 }
 
+#semi-circle-btn:hover {
+
+}
+/* turn list items right side up */
 #nav-btn ul{
-
-transform: rotate(90deg);
+list-style-type: none;
+text-decoration-line: none;
 }
 
-#nav-btn ul li {
-float: left;
-
+#semi-circle-btn {
+margin-left: 50px;
 }
+
+#nav-btn a {
+word-wrap: normal;
+font-family: 'Bungee Hairline', cursive;
+text-decoration-line: none;
+
+color: crimson;
+padding: 5px;
+}
+
+.option-one { 
+height: 30px; 
+width: 100px; 
+grid-column:1 ;
+grid-row: 1/4 ;
+}
+
+.nav-option:hover {
+background-color: gold;
+font-weight: bold;
+border: 2px solid crimson;
+}
+
+.option-two {
+height: 30px; 
+width: 100px; 
+grid-column: 1;
+grid-row: 2/4;
+}
+
+.option-three {
+height: 30px; 
+width: 100px; 
+grid-column: 1;
+grid-row: 3/4;
+}
+
+.option-four {
+grid-column: 1;
+grid-row: 4/4;
+}
+
 
 #resume {
 position: relative;
-
 }
 
 /* The actual timeline (the vertical ruler)*/

@@ -3,8 +3,19 @@ const headshotObj = [
   { shot: '/photo_assets/IMG_1062.jpeg' },
   { shot: '/photo_assets/IMG_1948.jpeg' },
   { shot: '/photo_assets/IMG_0830.jpeg' },  
-];
+]
 
+const headShot = () => {
+  const frame = document.querySelector('#headshot-wrap');
+  const photo = document.createElement('img');
+  frame.appendChild(photo);
+  frame.innerHTML = photo.innerHTML(headshotObj[1].shot)
+  console.log(photo.innerHTML(headshotObj[1].shot))
+}
+
+headshot
+
+//trying to make a continuous loop here
 // const headshotLoop = () => {
 //   const headshot = document.querySelector('#headshot-wrap')
 //   const img = document.createElement('img')
@@ -61,12 +72,6 @@ const nameSwitch = () => {
 
 setInterval(nameSwitch, 4000)
 
-
-
-
-
-
-
 //modified from https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 1;
 const showSlides = (n) => {    
@@ -75,8 +80,7 @@ const showSlides = (n) => {
     slideIndex = 1
   } else if (n < 1) {
     slideIndex = slides.length
-  }
-  
+  }  
   for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
   }  
@@ -88,8 +92,16 @@ const slideToDa= (n) => { showSlides(slideIndex += n) }
 const currentSlide = (n) => { showSlides(slideIndex = n) }
 
 
-
-
+//make the semicircle officially a button
+const semiCircle = document.querySelector('#semi-circle-btn')
+semiCircle.addEventListener('click', () => {
+  const ul = document.querySelector('#nav-btn ul')
+  if (ul.style.display === 'none') {
+    ul.style.display = 'block'
+  } else {
+    ul.style.display = 'none'
+  }
+})
 
 
 

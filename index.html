@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--  
+On the whole, I think you've done a nice job structuring your HTML here.
+There are a few instances where you could use semantic HTML tags like header, main, footer, article, etc.
+-->
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -59,8 +65,9 @@
 
     <section id='aboutMe'>
     <div class='slideshow-container' id='aboutMeSlides'>
-        
+        <!--    Because you've got a separate CSS file anyways, I'd highly recommend moving ALL your styling there!      -->
         <div class='mySlides fade' style='width: 100%'>
+            <!--      Setting both the height and width this way is throwing off the aspect ratio of your image        -->
             <img src="/photo_assets/IMG_0830.jpeg" style="height:400px; width:20%">                
             <div class="text">Intro</div>
             <p></p>
@@ -88,6 +95,11 @@
     </div>
     </section>
 
+    <!--    
+        I love the layout you're using for your resume section! I think you might have an easier time
+        making this layout responsive by using CSS grid and your own styling instead of the approach
+        laid out by this w3 schools example.
+    -->
     <!-- html and css taken from w3schools => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline-->
     <section id='resume'>
         <div class="timeline"></div>

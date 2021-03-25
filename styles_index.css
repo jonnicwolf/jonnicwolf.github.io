@@ -80,6 +80,11 @@ border: 2px solid crimson;
 color: crimson;
 }
 
+/*
+Just like Flexbox, Grid layout is great for laying out direct children.
+Since li.option-one is the child of a ul, not the child of section.nav-btn (which is a grid),
+you're running into some problems here!
+*/
 .option-one { 
 height: 30px; 
 width: 100px; 
@@ -114,7 +119,7 @@ grid-row: 4/4;
     max-width: 1000px;
     position: relative;
     margin: auto;
-    display: flex;
+    display: flex; /*Since only a single slide is displayed at a time, flexbox might not be necessary!*/
 }
 
 #aboutMe img{

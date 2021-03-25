@@ -1,3 +1,7 @@
+// Since each object has a single key,
+// you might be better off just using an array of strings.
+// the name headshotObj is a bit misleading since this is an array!
+// how's the name 'headshots' ?
 const headshotObj = [
   { shot: '/photo_assets/5A06D71D-808D-4825-B692-F5C79E6D89B8.jpg' },
   { shot: '/photo_assets/IMG_1062.jpeg' },
@@ -5,14 +9,19 @@ const headshotObj = [
   { shot: '/photo_assets/IMG_0830.jpeg' },  
 ]
 
+
 const headShot = () => {
   const frame = document.querySelector('#headshot-wrap');
   const photo = document.createElement('img');
   frame.appendChild(photo);
+  // setting the .innerHTML property will overwrite any existing children of frame.
+  // This line effectively undoes the line above it.
+  // To set the url for an image tag like 'photo', use its .src attribute!
   frame.innerHTML = photo.innerHTML(headshotObj[1].shot)
+  // photo.innerHTML is not a function - you can't call it.
   console.log(photo.innerHTML(headshotObj[1].shot))
 }
-
+// did you mean to call this?
 headshot
 
 //trying to make a continuous loop here
@@ -70,8 +79,11 @@ const nameSwitch = () => {
     }    
 }
 
+// Love this!
 setInterval(nameSwitch, 4000)
 
+// This seems to be working fine - the problem is the image urls.
+// Add the images for your site to a ./assets folder!!!
 //modified from https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 1;
 const showSlides = (n) => {    
@@ -91,7 +103,10 @@ showSlides(slideIndex);
 const slideToDa= (n) => { showSlides(slideIndex += n) }
 const currentSlide = (n) => { showSlides(slideIndex = n) }
 
-
+// Nice.
+// I think this could be even better if you toggle a css class in the click listener instead.
+// Then you can use that class to set display: none; inside a css file.
+// that will prevent you from writing inline styles and make it easier to identify where all your styling comes from, imo.
 //make the semicircle officially a button
 const semiCircle = document.querySelector('#semi-circle-btn')
 semiCircle.addEventListener('click', () => {

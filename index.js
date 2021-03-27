@@ -13,7 +13,7 @@ const headShot = () => {
   console.log(photo.innerHTML(headshotObj[1].shot))
 }
 
-headshot
+// headshot()
 
 //trying to make a continuous loop here
 // const headshotLoop = () => {

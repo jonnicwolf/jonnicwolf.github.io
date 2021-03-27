@@ -28,17 +28,11 @@ font-size: 30px;
 
 /* make a semi circle */
 #nav-btn {
-
-
 height: 200px;
 width: 200px;
 display: flex;
 flex-direction: row-reverse;
 align-items: center;
-
-/* grid-template-columns: [sect-btn]100px [menu-btn]100px;
-grid-template-rows: repeat(4, 25% [row]);
-justify-items: stretch; */
 }
 
 #semi-circle-btn {
@@ -51,7 +45,7 @@ transform: rotate(270deg);
 }
 
 #semi-circle-btn:hover {
-background-color: crimson;
+background-color: crimson !important;
 }
 
 /* turn list items right side up */
@@ -59,9 +53,8 @@ background-color: crimson;
 flex-grow: 1;
 list-style-type: none;
 text-decoration-line: none;
+display: none;
 }
-
-
 
 .nav-option {
 display: block;
@@ -170,31 +163,6 @@ align-self: center;
   font-family: 'Bungee Hairline', cursive;
   text-align: center;
 }
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-  scroll-behavior: smooth;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .back, .next,.text {font-size: 11px}
-}
-
 
 #resume {
 position: relative;
@@ -307,54 +275,27 @@ padding: 20px 30px;
 background-color: gold;
 position: relative;
 border-radius: 6px;
-
 }
 
 #skills {
 display: flex;
 justify-content: center;
 }
+
 .skills-container {
 display: flex;
 margin-top: 200px;
 width: 500px;
 justify-content: center;
-
-/* max-width: 1000px;
-position: relative;
-margin: auto;
-padding: 105px;
-margin-top: 50px; */
 }
 
 #skills i {
 font-size: 50px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* vertical-align: middle;
-font-size: 100px;
-padding: 15px;
-line-height: 1.2;
-right: 20%; */
 }
-
-/* Slideshow container */
 
 .active {
   background-color: #717171;
 }
-
 
 /* Fading animation */
 .fade {

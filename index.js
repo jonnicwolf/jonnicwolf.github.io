@@ -96,10 +96,12 @@ const currentSlide = (n) => { showSlides(slideIndex = n) }
 const semiCircle = document.querySelector('#semi-circle-btn')
 semiCircle.addEventListener('click', () => {
   const ul = document.querySelector('#nav-btn ul')
-  if (ul.style.display === 'none') {
-    ul.style.display = 'block'
-  } else {
+  if (ul.style.display === 'block') {
     ul.style.display = 'none'
+    semiCircle.style.backgroundColor = 'gold'
+  } else {
+    ul.style.display = 'block'
+    semiCircle.style.backgroundColor = 'crimson'
   }
 })
 

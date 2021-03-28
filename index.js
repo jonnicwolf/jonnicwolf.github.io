@@ -76,6 +76,7 @@ setInterval(nameSwitch, 4000)
 let slideIndex = 1;
 const showSlides = (n) => {    
   const slides = document.getElementsByClassName("mySlides");
+  
   if (n > slides.length) {
     slideIndex = 1
   } else if (n < 1) {

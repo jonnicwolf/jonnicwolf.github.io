@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
     background: #0C0529;
     color: #FF0000;
 }
@@ -116,7 +119,11 @@ grid-row: 4/4;
 
 #aboutMe img{
 align-self: center;
+height: 400px;
+width: 20%;
 }
+
+/* (Open!(These enclosed handle both carousels)) */
 /* Next & previous buttons */
 .back, .next {
   cursor: pointer;
@@ -156,6 +163,10 @@ align-self: center;
   text-align: center;
 }
 
+.mySlides {
+  width: 100%;
+}
+
 .mySlides p {
   color: aqua;
   font-size: 25px;
@@ -166,6 +177,7 @@ align-self: center;
   font-family: 'Bungee Hairline', cursive;
   text-align: center;
 }
+/* (Close!()) */
 
 #resume {
 position: relative;
@@ -279,6 +291,18 @@ background-color: gold;
 position: relative;
 border-radius: 6px;
 }
+
+#projects {
+  display: flex;
+}
+
+#projects img{
+  align-self: center;
+  height: 400px;
+  width: 20%;
+  }
+
+
 
 #skills {
 display: flex;

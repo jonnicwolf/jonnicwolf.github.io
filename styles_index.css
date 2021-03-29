@@ -113,20 +113,25 @@ grid-row: 4/4;
 
 /* Slideshow container */
 .slideshow-container {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* height: 700px; */
     max-width: 1000px;
     width: 1200px;
     position: relative;
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+
 }
 
 #aboutMe img{
+background-color: rgba(255, 255, 255, 0.1);
 align-self: center;
 align-content: center;
 height: 700px;
 width: auto;
+padding: 0px 300px 0px 300px;
 
 }
 

@@ -153,6 +153,11 @@ width: auto;
   border-radius: 3px 0 0 3px;
 }
 
+.back {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .back:hover, .next:hover {
   background-color: crimson;
@@ -160,9 +165,10 @@ width: auto;
 
 /* Caption text */
 .text {
+  background-color: rgba(255, 255, 255, 0.1);
   color: aqua;
   font-size: 15px;
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -170,14 +176,16 @@ width: auto;
   text-align: center;
 }
 
-.mySlides1 {
-  width: 100%;
+.mySlides-1 {  
+  display: flex;
+  justify-content: center;
 }
 
-.mySlides1 p {
+.mySlides-1 p {
+  background-color: rgba(255, 255, 255, 0.1);  
   color: aqua;
   font-size: 25px;
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -313,11 +321,12 @@ border-radius: 6px;
   width: 20%;
 }
 
-.mySlides2 {
+.mySlides-2 {
   width: 100%;
 }
 
-.mySlides2 p {
+.mySlides-2 p {
+  background-color: rgba(255, 255, 255, 0.1);
   color: aqua;
   font-size: 25px;
   padding: 8px 12px;

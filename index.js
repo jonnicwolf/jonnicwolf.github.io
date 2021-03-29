@@ -34,23 +34,31 @@ setInterval(nameSwitch, 4000)
 let slideIndex = 1;
 const showSlides = (n,slideId) => {    
   const slides = document.getElementsByClassName(slideId);
-  console.log(slides)
-  
+
   if (n > slides.length) {
     slideIndex = 1
+    console.log('n > slides.length')
   } else if (n < 1) {
     slideIndex = slides.length
+    console.log(slideIndex)
   }  
   for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-  }  
-  slides[slideIndex-1].style.display = "block";    
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex - 1].style.display = "flex";
+  console.log(slideIndex)
+  
 }
-showSlides(slideIndex, 'mySlides1');
-showSlides(slideIndex,'mySlides2')
+showSlides(slideIndex, 'mySlides-1');
+showSlides(slideIndex, 'mySlides-2');
 
-const slideToDa= (n) => { showSlides(slideIndex += n) }
-const currentSlide = (n) => { showSlides(slideIndex = n) }
+console.log(slideIndex)
+// showSlides(slideIndex, 'mySlides2');
+
+const slideToDa = (n,slideId) => { showSlides(slideIndex += n, slideId ) }
+
+// const currentSlide = (n) => { showSlides(slideIndex = n) }
 
 //make the semicircle officially a button
 const semiCircle = document.querySelector('#semi-circle-btn')

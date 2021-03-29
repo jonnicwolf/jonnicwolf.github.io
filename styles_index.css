@@ -108,7 +108,6 @@ grid-row: 4/4;
 }
 
 #aboutMe {
-  
   margin-bottom: 200px;
 }
 
@@ -171,11 +170,11 @@ width: auto;
   text-align: center;
 }
 
-.mySlides {
+.mySlides1 {
   width: 100%;
 }
 
-.mySlides p {
+.mySlides1 p {
   color: aqua;
   font-size: 25px;
   padding: 8px 12px;
@@ -185,6 +184,7 @@ width: auto;
   font-family: 'Bungee Hairline', cursive;
   text-align: center;
 }
+
 /* (Close!()) */
 
 #resume {
@@ -311,6 +311,21 @@ border-radius: 6px;
   align-self: center;
   height: 400px;
   width: 20%;
+}
+
+.mySlides2 {
+  width: 100%;
+}
+
+.mySlides2 p {
+  color: aqua;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  font-family: 'Bungee Hairline', cursive;
+  text-align: center;
 }
 
 #skills {

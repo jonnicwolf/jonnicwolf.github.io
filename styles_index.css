@@ -108,21 +108,27 @@ grid-row: 4/4;
 }
 
 #aboutMe {
-  display: flex;
+  
   margin-bottom: 200px;
 }
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
+    width: 1200px;
     position: relative;
     margin: auto;
     display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 #aboutMe img{
 align-self: center;
-height: 400px;
-width: 20%;
+align-content: center;
+height: 700px;
+width: auto;
+
 }
 
 /* (Open!(These enclosed handle both carousels)) */

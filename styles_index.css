@@ -6,47 +6,58 @@ body {
 }
 
 #contacts ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;    
-    top:0;
-    position:sticky;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;    
+  top:0;
+/* position:sticky; */
 }
 
 #contacts li {
-float: right;
-padding: 15px 15px;
+  float: right;
+  padding: 15px 15px;
 /* position: sticky; */
 }
 
 #contacts a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 #contacts i {
-font-size: 30px;    
- color: gold;
+  /* position: relative; */
+  font-size: 20px;    
+  color: gold;
+}
+#contacts i:hover {  
+  background-color: crimson;
+  border: 5px solid gold;
+  padding: 5px;
+  color: gold;
+  border-radius: 55px 55px 55px 55px;
+  transition: 0.3s;
 }
 
 /* make a semi circle */
 #nav-btn {
-align-self: flex-end;
-height: 200px;
-width: 200px;
-display: flex;
-flex-direction: row-reverse;
-align-items: center;
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+/* position: sticky; */
 }
 
 #semi-circle-btn {
-background-color: gold;
-position:sticky; 
-height: 50px; 
-width: 50px; 
-border-radius: 50px 50px 0 0; 
-transform: rotate(270deg);
-opacity: 0.8;
-transition: 0.7s;
+  background-color: gold;
+/* position:sticky;  */
+  height: 50px; 
+  width: 50px; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(270deg);
+  opacity: 0.8;
+  transition: 0.3s;
+  overflow: hidden;
 /* top: 0;
 bottom: 0; */
 }
@@ -62,6 +73,7 @@ flex-grow: 1;
 list-style-type: none;
 text-decoration-line: none;
 display: none;
+/* position: sticky; */
 }
 
 .nav-option {
@@ -123,7 +135,6 @@ grid-row: 4/4;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #aboutMe img{
@@ -133,7 +144,6 @@ align-content: center;
 height: 700px;
 width: auto;
 padding: 0px 300px 0px 300px;
-
 }
 
 /* (Open!(These enclosed handle both carousels)) */

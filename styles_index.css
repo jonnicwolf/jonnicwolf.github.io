@@ -218,6 +218,23 @@ position: relative;
 margin-bottom: 200px;
 }
 
+#resume h2 {
+  font-family: 'bungee Hairline';
+}
+
+#resume a {
+  text-decoration-line: none;
+  color: gold;
+}
+
+#resume a:hover {
+  font-family: 'Bungee Hairline', cursive;
+  background-color: crimson;
+  border: 2px solid gold;
+  color: gold;
+  transition: 0.3s;
+}
+
 /* The actual timeline (the vertical ruler)*/
 .container {
 /* box-sizing: border-box; */

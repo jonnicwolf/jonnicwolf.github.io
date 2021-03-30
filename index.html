@@ -18,6 +18,20 @@
     <title>Jon Narine</title>
 </head>
 <body>
+
+<div id='flex-wrapper-1'>
+    <div id='nav-btn'>        
+        <div id='semi-circle-btn'></div>
+        <ul>
+            <li class='option-one'> <a class='nav-option' href="#aboutMe-slides">About Me</a> </li>
+            <li class='option-two'> <a class='nav-option' href="#resume"> Resume</a> </li>
+            <li class='option-three'> <a class='nav-option' href="#projects">Projects</a> </li>
+            <li class='option-four'> <a class='nav-option' href="#skills">Skills</a> </li>            
+        </ul>        
+    </div>
+</div>
+
+<div id='flex-wrapper-2'>
     <section id="contacts">            
         <ul>
             <li>
@@ -35,31 +49,17 @@
                 <i class="devicon-linkedin-plain"></i>
             </li>                    
         </ul>            
-    </section>
-
-    <section id='nav-btn'>
-        
-            <div id='semi-circle-btn'></div>
-            <ul>
-                <li class='option-one'> <a class='nav-option' href="#aboutMe-slides">About Me</a> </li>
-                <li class='option-two'> <a class='nav-option' href="#resume"> Resume</a> </li>
-                <li class='option-three'> <a class='nav-option' href="#projects">Projects</a> </li>
-                <li class='option-four'> <a class='nav-option' href="#skills">Skills</a> </li>            
-            </ul>
-        
-    </section>
+    </section>   
     
-    <section id='headshot'> 
-        <div id='headshot-wrap'>
-            
-        </div>
+    <section id='name-loop'>         
         <h1 id="header">animate gov name and nick name</h1>            
     </section>
     
     <!-- place toggle switch -->
 
-    <section id='aboutMe'>
-    <div class='slideshow-container'>
+    <section id='aboutMe'> 
+    <h3 class='section-title'>Some things to know about me...</h3>
+    <div class='slideshow-container'> 
         
         <div class='mySlides-1 fade'>            
             <img src="/photo_assets/IMG_0830.jpeg">    
@@ -89,8 +89,18 @@
     </div>
     </section>
 
+    <!-- <div id='nav-btn'>        
+        <div id='semi-circle-btn'></div>
+        <ul>
+            <li class='option-one'> <a class='nav-option' href="#aboutMe-slides">About Me</a> </li>
+            <li class='option-two'> <a class='nav-option' href="#resume"> Resume</a> </li>
+            <li class='option-three'> <a class='nav-option' href="#projects">Projects</a> </li>
+            <li class='option-four'> <a class='nav-option' href="#skills">Skills</a> </li>            
+        </ul>        
+    </div> -->
     <!-- html and css taken from w3schools => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline-->
     <section id='resume'>
+        <h3 class='section-title'>Some things to know about me...</h3>
         <div class="timeline"></div>
         <div class="container right">
             <div class="content">
@@ -167,6 +177,8 @@
                 <i class="devicon-npm-original-wordmark"></i>                
         </div>            
     </section> <!--skills-->
+</div>
+<!-- flex-wrapper-2 -->
 
 </body>
 </html>

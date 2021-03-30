@@ -1,8 +1,38 @@
 body {
-    display: flex;
-    flex-direction: column;
-    background: #0C0529;
-    color: #FF0000;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 2% 98%;  
+  justify-content: space-between;    
+  background: #0C0529;
+  color: #FF0000;    
+}
+
+.flex-wrapper-1 {
+  grid-column: 1; 
+  grid-row: 2;  
+}
+
+.flex-wrapper-2 {
+  /* grid-column: 1; */
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0C0529;
+  color: #FF0000;
+  /* overflow-y: auto; */
+}
+
+
+#name-loop {
+  font-family: 'Bungee Shade';
+  font-size: 60px;
+  margin: auto;
+}
+
+.section-title {
+  font-family: 'bungee shade';
+  color: rgb(0, 255, 255)
 }
 
 #contacts ul {
@@ -10,13 +40,13 @@ body {
   margin: 0;
   padding: 10px;    
   top:0;
-/* position:sticky; */
+  /* position:sticky; */
 }
 
 #contacts li {
   float: right;
   padding: 15px 15px;
-/* position: sticky; */
+  /* position: sticky; */
 }
 
 #contacts a {
@@ -40,49 +70,45 @@ body {
 /* make a semi circle */
 #nav-btn {
   align-self: flex-end;
-  height: 200px;
-  width: 200px;
+  height: 200px;  
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-/* position: sticky; */
+  /* position: absolute; */
 }
 
 #semi-circle-btn {
   background-color: gold;
-/* position:sticky;  */
+  position: sticky;
   height: 50px; 
   width: 50px; 
   border-radius: 50px 50px 0 0; 
   transform: rotate(270deg);
   opacity: 0.8;
-  transition: 0.3s;
-  overflow: hidden;
-/* top: 0;
-bottom: 0; */
+  transition: 0.3s;  
+  top:0; 
 }
 
 #semi-circle-btn:hover {
-background-color: crimson !important;
-opacity: 1;
+  background-color: crimson !important;
+  opacity: 1;
 }
 
 /* turn list items right side up */
 #nav-btn ul{
-flex-grow: 1;
-list-style-type: none;
-text-decoration-line: none;
-display: none;
-/* position: sticky; */
+  flex-grow: 1;
+  list-style-type: none;
+  text-decoration-line: none;
+  display: none;
 }
 
 .nav-option {
-display: block;
-word-wrap: normal;
-font-family: 'Bungee Hairline', cursive;
-text-decoration-line: none;
-color: gold;
-padding: 5px;
+  display: block;
+  word-wrap: normal;
+  font-family: 'Bungee Hairline', cursive;
+  text-decoration-line: none;
+  color: gold;
+  padding: 5px;
 }
 
 .nav-option:hover {
@@ -196,17 +222,13 @@ padding: 0px 300px 0px 300px;
 .mySlides-1 {  
   display: flex;
   justify-content: center;
-  height: 850px;
+  height: 790px;
 }
 
-.mySlides-1 p {
-  /* background-color: rgba(255, 255, 255, 0.1);   */
+.mySlides-1 p {  
   color: aqua;
-  font-size: 25px;
-  /* padding: 8px 12px; */
-  position: absolute;
-  /* bottom: 8px; */
-  /* width: 80%; */
+  font-size: 25px;  
+  position: absolute;  
   font-family: 'Bungee Hairline', cursive;
   text-align: center;
 }
@@ -376,8 +398,7 @@ left: -16px;
 }
 
 #skills {
-display: flex;
-justify-content: center;
+align-self: center;
 }
 
 .skills-container {

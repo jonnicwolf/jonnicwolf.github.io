@@ -1,24 +1,12 @@
-const headShot = () => {
-  const frame = document.querySelector('#headshot-wrap');
-  const photo = document.createElement('img');
-  frame.appendChild(photo);
-  frame.innerHTML = photo.innerHTML(headshotObj[1].shot)
-  console.log(photo.innerHTML(headshotObj[1].shot))
-}
-
 const header = document.querySelector('#header')
 const govName = 'Jon Narine.dev'
 const nickName = 'Fezz.shake'
-
 const slides = document.querySelector('.mySlides')
-
 const documentHeight = document.documentElement.scrollHeight - window.innerHeight
 const scrollHeight = window.scrollY
 
 header.textContent = govName
-header.setAttribute('style','font-family: Bungee Shade; font-size: 48px')  
 
-//names should swap every 4000 but switch on toggle button click
 const nameSwitch = () => {
     if (header.textContent === govName) {
       header.textContent = nickName
@@ -47,13 +35,12 @@ const showSlides = (n,slideId) => {
   }
   
   slides[slideIndex - 1].style.display = "flex";
-  console.log(slideIndex)
-  
+  console.log(slideIndex)  
 }
 showSlides(slideIndex, 'mySlides-1');
 showSlides(slideIndex, 'mySlides-2');
 
-console.log(slideIndex)
+// console.log(slideIndex)
 // showSlides(slideIndex, 'mySlides2');
 
 const slideToDa = (n,slideId) => { showSlides(slideIndex += n, slideId ) }

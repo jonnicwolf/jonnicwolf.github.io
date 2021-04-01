@@ -24,15 +24,17 @@ body {
 }
 
 .section-title {
-  font-family: 'bungee shade';
+  font-family: 'bungee hairline';
   font-size: 40px;
   color: rgb(0, 255, 255)
 
 }
 
 #name-loop {
+  display: flex;
+  justify-content: center;
   font-family: 'Bungee Shade';
-  font-size: 60px;
+  font-size: 90px;
   margin: auto;
 }
 
@@ -104,16 +106,17 @@ body {
 
 /* turn list items right side up */
 #nav-btn ul{
-  flex-grow: 1;
+  
   list-style-type: none;
   text-decoration-line: none;
   display: none;
 }
 
 .nav-option {
-  display: block;
+  display: block;  
   word-wrap: normal;
   font-family: 'Bungee Hairline', cursive;
+  font-size: 30px;
   text-decoration-line: none;
   color: gold;
   padding: 5px;
@@ -128,30 +131,34 @@ color: gold;
 
 .option-one { 
 height: 30px; 
-width: 100px; 
+width: 200px; 
 grid-column:1 ;
 grid-row: 1/4 ;
+padding: 5px;
 }
 
 .option-two {
 height: 30px; 
-width: 100px; 
+width: 200px; 
 grid-column: 1;
 grid-row: 2/4;
+padding: 5px;
 }
 
 .option-three {
 height: 30px; 
-width: 100px; 
+width: 200px; 
 grid-column: 1;
 grid-row: 3/4;
+padding: 5px;
 }
 
 .option-four {
 height: 30px;
-width: 100px;
+width: 200px;
 grid-column: 1;
 grid-row: 4/4;
+padding: 5px;
 }
 
 #aboutMe {
@@ -415,8 +422,10 @@ margin-bottom:100px;
 }
 
 #skills i {  
-  font-size: 200px;
+  font-size: 150px;
+  padding: 10px;
   color: rgba(0, 255, 255);
+
 }
 
 /* Fading animation */

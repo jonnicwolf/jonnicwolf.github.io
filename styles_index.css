@@ -75,11 +75,14 @@ body {
 /* make a semi circle */
 #nav-btn {
   align-self: flex-end;
+  right: -8px;
   height: 200px;  
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  /* position: absolute; */
+  position: fixed;
+  z-index: 99;
+  margin-top: 100px;
 }
 
 #semi-circle-btn {

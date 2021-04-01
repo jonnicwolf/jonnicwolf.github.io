@@ -58,8 +58,10 @@ semiCircle.addEventListener('click', () => {
 const wrapper1 = document.querySelector('#flex-wrapper-1')
 const wrapper2 = document.querySelector('#flex-wrapper-2')
 
-
-
+const container = document.querySelector('#ping-container')
+container.addEventListener('click', () => {
+  const ping = document.querySelector('#ping-box a').click()  
+})
 
 
 

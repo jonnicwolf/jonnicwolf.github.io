@@ -214,14 +214,14 @@ padding: 0px 300px 0px 300px;
 .text {
   background-color: rgba(255, 255, 255, 0.1);
   color: aqua;
-  font-size: 15px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 60%;
   font-family: 'Open Sans', sans-serif;  
   text-align: center;
-  margin: -22px;
+  margin: -100px;
 }
 
 .mySlides-1 {  
@@ -232,7 +232,7 @@ padding: 0px 300px 0px 300px;
 
 .mySlides-1 p {  
   color: aqua;
-  font-size: 25px;  
+  font-size: 30px;  
   position: absolute;  
   font-family: 'Bungee Hairline', cursive;
   text-align: center;
@@ -407,7 +407,7 @@ left: -16px;
 .skills-container {
 display: flex;
 justify-content: center;
-margin-top: 100px;
+margin-top: 200px;
 margin-bottom:100px;
 }
 
@@ -424,8 +424,13 @@ margin-bottom:100px;
   animation-duration: 1.5s;
 }
 
+#ping-box {
+  display: flex;
+  justify-content: center;
+}
+
 #ping-container {
-  left: 30%;
+  /* left: 30%; */
   display: flex;
   justify-content: center;  
   align-items: center;

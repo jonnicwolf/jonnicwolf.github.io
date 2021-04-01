@@ -20,21 +20,9 @@
 <body>
 
 <div id='flex-wrapper-1'>
-    <div id='nav-btn'>        
-        <div id='semi-circle-btn'></div>
-        <ul>
-            <li class='option-one'> <a class='nav-option' href="#aboutMe-slides">About Me</a> </li>
-            <li class='option-two'> <a class='nav-option' href="#resume"> Resume</a> </li>
-            <li class='option-three'> <a class='nav-option' href="#projects">Projects</a> </li>
-            <li class='option-four'> <a class='nav-option' href="#skills">Skills</a> </li>            
-        </ul>        
-    </div>
-</div>
-
-<div id='flex-wrapper-2'>
     <section id="contacts">            
         <ul>
-            <li>
+            <li id='twitter'>
                 <a href="https://twitter.com/Fezz_dev">
                     <i class="devicon-twitter-original"></i>
                 </a>
@@ -50,7 +38,10 @@
             </li>                    
         </ul>            
     </section>   
+</div>    
     
+
+<div id='flex-wrapper-2'>
     <section id='name-loop'>         
         <h1 id="header">animate gov name and nick name</h1>            
     </section>
@@ -59,8 +50,7 @@
 
     <section id='aboutMe'> 
     <h3 class='section-title'>Some things to know about me...</h3>
-    <div class='slideshow-container'> 
-        
+    <div class='slideshow-container'>         
         <div class='mySlides-1 fade'>            
             <img src="/photo_assets/IMG_0830.jpeg">    
             <div class="text"> Hi! I'm Jon and they call me Fezz. A Web Dev, and a killer Bartender.  </div>
@@ -88,19 +78,10 @@
         
     </div>
     </section>
-
-    <!-- <div id='nav-btn'>        
-        <div id='semi-circle-btn'></div>
-        <ul>
-            <li class='option-one'> <a class='nav-option' href="#aboutMe-slides">About Me</a> </li>
-            <li class='option-two'> <a class='nav-option' href="#resume"> Resume</a> </li>
-            <li class='option-three'> <a class='nav-option' href="#projects">Projects</a> </li>
-            <li class='option-four'> <a class='nav-option' href="#skills">Skills</a> </li>            
-        </ul>        
-    </div> -->
+    
     <!-- html and css taken from w3schools => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline-->
     <section id='resume'>
-        <h3 class='section-title'>Some things to know about me...</h3>
+        <!-- <h3 class='section-title'>Some things to know about me...</h3> -->
         <div class="timeline"></div>
         <div class="container right">
             <div class="content">
@@ -135,9 +116,9 @@
             </div>
     </section> <!--resume-->
 
-    <section id='projects'>
+    <section id='projects'>        
+        <h3 class='section-title'>Projects</h3>                    
         <div class='slideshow-container'>
-            
             <div class='mySlides-2 fade'>
                 <img src="photo_assets/snowman.gif">    
                 <div class="text"> An exhilarating fast paced word game of chance and wits. Fill in the blanks correctly to win!</div>
@@ -177,6 +158,12 @@
                 <i class="devicon-npm-original-wordmark"></i>                
         </div>            
     </section> <!--skills-->
+
+    <section id='ping-box'>
+        <div id='ping-container'>            
+                <a href="mailto:jonnicwolf@gmail.com">PING ME!</a>          
+        </div>
+    </section>
 </div>
 <!-- flex-wrapper-2 -->
 

@@ -1,20 +1,20 @@
 body {
   display: grid;
-  grid-template-columns: 90% 10%;
-  grid-template-rows: 2% 98%;  
-  justify-content: space-between;    
+  /* grid-template-columns: 90% 10%;
+  grid-template-rows: 3px 98%;   */
+  /* justify-content: space-between;     */
   background: #0C0529;
   color: #FF0000;    
 }
 
 .flex-wrapper-1 {
-  grid-column: 1; 
-  grid-row: 2;  
+  /* grid-column: 1; 
+  grid-row: 2;   */
 }
 
 .flex-wrapper-2 {
   /* grid-column: 1; */
-  grid-row: 2;
+  /* grid-row: 2; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +23,12 @@ body {
   /* overflow-y: auto; */
 }
 
+.section-title {
+  font-family: 'bungee shade';
+  font-size: 40px;
+  color: rgb(0, 255, 255)
+
+}
 
 #name-loop {
   font-family: 'Bungee Shade';
@@ -30,32 +36,27 @@ body {
   margin: auto;
 }
 
-.section-title {
-  font-family: 'bungee shade';
-  color: rgb(0, 255, 255)
-}
 
 #contacts ul {
   list-style-type: none;
-  margin: 0;
-  padding: 10px;    
-  top:0;
+  /* margin: 0; */
+  /* padding: 10px;     */
+  /* top:0; */
   /* position:sticky; */
 }
 
 #contacts li {
   float: right;
-  padding: 15px 15px;
-  /* position: sticky; */
+  padding: 15px;
+  /* font-size: 2px; */
 }
 
-#contacts a {
-  text-decoration: none;
+#contacts a {  
+  text-decoration: none;  
 }
 
-#contacts i {
-  /* position: relative; */
-  font-size: 20px;    
+#contacts i {  
+  font-size: 40px; 
   color: gold;
 }
 #contacts i:hover {  
@@ -64,7 +65,11 @@ body {
   padding: 5px;
   color: gold;
   border-radius: 55px 55px 55px 55px;
-  transition: 0.3s;
+  /* transition: 0.3s; */
+}
+
+#twitter {
+  font-size: 20px;
 }
 
 /* make a semi circle */
@@ -333,9 +338,9 @@ top: 22px;
 width: 0;
 z-index: 1;
 right: 30px;
-border: medium solid white;
+border: medium solid rgb(0, 255, 255);
 border-width: 10px 0 10px 10px;
-border-color: transparent transparent transparent white;
+border-color: transparent transparent transparent rgb(0, 255, 255);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -347,9 +352,9 @@ top: 22px;
 width: 0;
 z-index: 1;
 left: 30px;
-border: medium solid white;
+border: medium solid rgb(0, 255, 255);
 border-width: 10px 10px 10px 0;
-border-color: transparent white transparent transparent;
+border-color: transparent rgb(0, 255, 255) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -397,23 +402,18 @@ left: -16px;
   text-align: center;
 }
 
-#skills {
-align-self: center;
-}
 
 .skills-container {
 display: flex;
+/* justify-content: center; */
+align-items: center;
 margin-top: 200px;
 width: 500px;
-justify-content: center;
 }
 
 #skills i {
-font-size: 50px;
-}
-
-.active {
-  background-color: #717171;
+  /* align-self: center; */
+  font-size: 50px;
 }
 
 /* Fading animation */
@@ -422,6 +422,28 @@ font-size: 50px;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+#ping-container {
+  left: 30%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  font-family: 'Bungee Outline', cursive;
+  font-size: 80px;
+  height: 200px;
+  width: 900px;
+  padding: 20px 30px; 
+  position: relative;
+  border-radius: 6px;
+  border: 2px solid rgba(0, 255, 255);
+}
+
+#ping-box a {  
+  align-self: center;
+  width: 50%;  
+  text-decoration-line: none;
+  color: rgba(0, 255, 255);
 }
 
 @-webkit-keyframes fade {

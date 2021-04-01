@@ -60,6 +60,13 @@ semiCircle.addEventListener('click', () => {
   }
 })
 
+const wrapper1 = document.querySelector('#flex-wrapper-1')
+const wrapper2 = document.querySelector('#flex-wrapper-2')
+
+// wrapper1.style.gridColumn = 2;
+// wrapper1.style.gri
+
+
 
 
 

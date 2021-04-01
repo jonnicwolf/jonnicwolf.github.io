@@ -436,7 +436,16 @@ margin-bottom:100px;
   padding: 20px 30px; 
   position: relative;
   border-radius: 6px;
+  
   border: 2px solid rgba(0, 255, 255);
+}
+
+#ping-container:hover{
+  font-family: 'Bungee Inline', cursive;
+  background-color: crimson;
+  border: 2px solid gold;
+  color: gold;
+  transition: 0.3s;
 }
 
 #ping-box a {  
@@ -444,8 +453,18 @@ margin-bottom:100px;
   text-align: center;
   width: 50%;  
   text-decoration-line: none;
-  color: rgba(0, 255, 255);
+  color: gold;
 }
+
+/* #ping-box a:hover {
+  font-family: 'Bungee Outline', cursive;
+  background-color: crimson;
+  border: 2px solid gold;
+  color: gold;
+  transition: 0.3s;
+} */
+
+
 
 @-webkit-keyframes fade {
   from {opacity: .4} 

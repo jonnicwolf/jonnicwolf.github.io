@@ -40,12 +40,7 @@ const showSlides = (n,slideId) => {
 showSlides(slideIndex, 'mySlides-1');
 showSlides(slideIndex, 'mySlides-2');
 
-// console.log(slideIndex)
-// showSlides(slideIndex, 'mySlides2');
-
 const slideToDa = (n,slideId) => { showSlides(slideIndex += n, slideId ) }
-
-// const currentSlide = (n) => { showSlides(slideIndex = n) }
 
 //make the semicircle officially a button
 const semiCircle = document.querySelector('#semi-circle-btn')
@@ -63,8 +58,8 @@ semiCircle.addEventListener('click', () => {
 const wrapper1 = document.querySelector('#flex-wrapper-1')
 const wrapper2 = document.querySelector('#flex-wrapper-2')
 
-// wrapper1.style.gridColumn = 2;
-// wrapper1.style.gri
+
+
 
 
 

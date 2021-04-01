@@ -242,7 +242,7 @@ padding: 0px 300px 0px 300px;
 
 #resume {
 position: relative;
-margin-bottom: 200px;
+margin-bottom: 100px;
 }
 
 #resume h2 {
@@ -374,6 +374,7 @@ left: -16px;
 
 #projects {
   display: flex;
+  flex-direction: column;
   margin: 10px;
   padding: 10px;
 }
@@ -405,15 +406,14 @@ left: -16px;
 
 .skills-container {
 display: flex;
-/* justify-content: center; */
-align-items: center;
-margin-top: 200px;
-width: 500px;
+justify-content: center;
+margin-top: 100px;
+margin-bottom:100px;
 }
 
-#skills i {
-  /* align-self: center; */
-  font-size: 50px;
+#skills i {  
+  font-size: 200px;
+  color: rgba(0, 255, 255);
 }
 
 /* Fading animation */
@@ -441,6 +441,7 @@ width: 500px;
 
 #ping-box a {  
   align-self: center;
+  text-align: center;
   width: 50%;  
   text-decoration-line: none;
   color: rgba(0, 255, 255);

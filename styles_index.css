@@ -73,19 +73,21 @@ body {
 #nav-btn {    
   height: 500px;
   width: 500px;
-  left: -90px;
-  top: -90px;
-  display: grid;  
+  left: -40px;
+  top: -200px; 
+  transform: rotate(325deg);  
+  text-align: center;    
+  /* display: grid;  
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  align-items: flex-start;
+  align-items: flex-start; */
   position: fixed;
   z-index: 99;  
 }
 
 #semi-circle-btn {
-  grid-column: 1;
-  grid-row: 1;
+  /* grid-column: 1;
+  grid-row: 1; */
   background-color: gold;
   position: sticky;
   height: 200px; 
@@ -102,10 +104,11 @@ body {
 
 /* turn list items right side up */
 #nav-btn ul{
-  transform: rotate(315deg);      
-  grid-column: 2;
-  grid-row: 2;
-  list-style-type: none;
+  /* transform: rotate(315deg);       */
+  /* grid-column: 2;
+  grid-row: 2; */
+  
+  list-style-type: none;  
   text-decoration-line: none;
   display: none;
 }
@@ -113,49 +116,43 @@ body {
 .nav-option {
   display: grid;
   word-wrap: normal;
-  font-family: 'Bungee Hairline', cursive;
-  font-size: 30px;
+  font-family: 'Bungee', cursive;
+  font-size:30px;
   text-decoration-line: none;
   color: gold;
-  padding: 5px;
+  padding: 5px;  
 }
 
 .nav-option:hover {
-  font-family: 'Bungee Hairline', cursive;
+  font-family: 'Bungee', cursive;
   background-color: crimson;
   border: 2px solid gold;
+  
   color: gold;
 }
 
 .option-one { 
   height: 30px; 
-  width: 200px; 
-  grid-column:1 ;
-  grid-row: 1/4 ;
+  width: 200px;   
   padding: 5px;
 }
 
 .option-two {
   height: 30px; 
-  width: 200px; 
-  grid-column: 1;
-  grid-row: 2/4;
+  width: 200px;   
   padding: 5px;
+  
 }
 
 .option-three {
   height: 30px; 
-  width: 200px; 
-  grid-column: 1;
-  grid-row: 3/4;
+  width: 200px;   
   padding: 5px;
 }
 
 .option-four {
   height: 30px;
-  width: 200px;
-  grid-column: 1;
-  grid-row: 4/4;
+  width: 200px;  
   padding: 5px;
 }
 

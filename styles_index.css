@@ -1,6 +1,6 @@
 body {
-  display: grid;  
-  background: #0C0529;
+  
+  background: #0C0529;  
   color: #FF0000;    
 }
 
@@ -23,18 +23,20 @@ body {
   display: flex;
   justify-content: center;
   font-family: 'Bungee Shade';
-  font-size: 90px;
+  font-size: 70px;
   margin: auto;
 }
 
 
 #contacts ul {
+  display: flex;
+  justify-content:center;
   list-style-type: none;  
 }
 
 #contacts li {
-  float: right;
-  padding: 15px;
+  /* height: 210px; */
+  padding: 30px 60px 30px 60px;
 }
 
 #contacts a {  
@@ -42,19 +44,29 @@ body {
 }
 
 #contacts i {  
-  font-size: 40px; 
+  /* font-size: 90px;  */
   color: gold;
 }
+
 #contacts i:hover {  
   background-color: crimson;
   border: 5px solid gold;
-  padding: 5px;
+  padding: 20px;
   color: gold;
-  border-radius: 55px 55px 55px 55px;  
+  /* border shape */
+  border-radius: 70px 70px 70px 70px;  
 }
 
-#twitter {
-  font-size: 20px;
+.devicon-twitter-original {
+  /* font-size: 100px !important; */
+}
+
+.devicon-linkedin-plain {
+  font-size: 100px !important;
+}
+
+.devicon-github-original {
+  font-size: 100px !important;
 }
 
 /* make a semi circle */
@@ -459,6 +471,43 @@ color: green;
   from {opacity: .4} 
   to {opacity: 1}
 }
+@media only screen and (max-width: 350px){
+  #name-loop {
+    font-size: 20px;
+  }
+
+  #flex-wrapper-2 {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 800px){
+  #flex-wrapper-2 {
+    width: 800px;
+  }
+
+  #name-loop {
+    font-size:50px;
+  }
+
+  #aboutMe {
+    width: 400px;
+  }
+  #resume {
+    width: 1000px;
+  }
+}
+
+@media (orientation: landscape) {
+
+}
+
+@media (orientation: portrait){
+  
+}
+
+/* @media (print) {
+  
+} */
 
 
 

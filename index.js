@@ -63,6 +63,11 @@ container.addEventListener('click', () => {
   const ping = document.querySelector('#ping-box a').click()  
 })
 
+const twitter = document.querySelector('.devicon-twitter-original')
+twitter.style.size = '100px'
+console.log(twitter.style.size)
+
+
 
 
 

@@ -4,7 +4,7 @@ body {
   color: #FF0000;    
 }
 
-.flex-wrapper-2 {  
+.sections-container {  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +58,7 @@ body {
 }
 
 .devicon-twitter-original {
-  /* font-size: 100px !important; */
+  font-size: 100px !important;
 }
 
 .devicon-linkedin-plain {
@@ -70,28 +70,29 @@ body {
 }
 
 /* make a semi circle */
-#nav-btn {
-  align-self: flex-end;
-  right: -8px;
-  height: 200px;  
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+#nav-btn {    
+  height: 500px;
+  width: 500px;
+  left: -90px;
+  top: -90px;
+  display: grid;  
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: flex-start;
   position: fixed;
-  z-index: 99;
-  margin-top: 100px;
+  z-index: 99;  
 }
 
 #semi-circle-btn {
+  grid-column: 1;
+  grid-row: 1;
   background-color: gold;
   position: sticky;
-  height: 50px; 
-  width: 50px; 
-  border-radius: 50px 50px 0 0; 
-  transform: rotate(270deg);
+  height: 200px; 
+  width: 200px; 
+  border-radius: 100px 100px 100px 100px;   
   opacity: 0.8;
-  transition: 0.3s;  
-  top:0; 
+  transition: 0.3s;    
 }
 
 #semi-circle-btn:hover {
@@ -100,14 +101,17 @@ body {
 }
 
 /* turn list items right side up */
-#nav-btn ul{  
+#nav-btn ul{
+  transform: rotate(315deg);      
+  grid-column: 2;
+  grid-row: 2;
   list-style-type: none;
   text-decoration-line: none;
   display: none;
 }
 
 .nav-option {
-  display: block;  
+  display: grid;
   word-wrap: normal;
   font-family: 'Bungee Hairline', cursive;
   font-size: 30px;
@@ -471,15 +475,16 @@ color: green;
   from {opacity: .4} 
   to {opacity: 1}
 }
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 1025px){
   #name-loop {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   #flex-wrapper-2 {
     width: 100px;
   }
 }
+
 @media only screen and (max-width: 800px){
   #flex-wrapper-2 {
     width: 800px;

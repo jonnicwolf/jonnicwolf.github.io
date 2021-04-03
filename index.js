@@ -55,17 +55,12 @@ semiCircle.addEventListener('click', () => {
   }
 })
 
-const wrapper1 = document.querySelector('#flex-wrapper-1')
-const wrapper2 = document.querySelector('#flex-wrapper-2')
-
-const container = document.querySelector('#ping-container')
-container.addEventListener('click', () => {
-  const ping = document.querySelector('#ping-box a').click()  
+const pingBox = document.querySelector('#ping-container')
+pingBox.addEventListener('click', () => {
+   document.querySelector('#ping-box a').click()  
 })
 
-const twitter = document.querySelector('.devicon-twitter-original')
-twitter.style.size = '100px'
-console.log(twitter.style.size)
+
 
 
 

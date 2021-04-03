@@ -172,11 +172,11 @@ body {
 }
 
 #aboutMe img{
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
   align-self: center;
   align-content: center;
   height: 700px;
-  width: auto;
+  width: 500px;
   padding: 0px 300px 0px 300px;
 }
 
@@ -235,14 +235,14 @@ body {
 .mySlides-1 {  
   display: flex;
   justify-content: center;
-  height: 790px;
+  height: 790px;  
 }
 
 .mySlides-1 p {  
   color: aqua;
   font-size: 30px;  
   position: absolute;  
-  font-family: 'Bungee Hairline', cursive;
+  font-family: 'Bungee', cursive;
   text-align: center;
 }
 
@@ -386,11 +386,11 @@ color: green;
 }
 
 #projects img {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
   align-self: center;
   align-content: center;
   height: 700px;
-  width: 500px;
+  width: 800px;
   padding: 0px 300px 0px 300px;
 }
 

@@ -19,179 +19,176 @@
     
     <title>Fezz.dev</title>
 </head>
+
 <body>
 
-<div id='sections-container'>
-    <section id='nav-btn'>        
-        <div id='semi-circle-btn'></div>
-        <ul>
-            <li class='option-one'> <a class='nav-option' href="#aboutMe">About Me</a> </li>
-            <li class='option-two'> <a class='nav-option' href="#resume"> Resume</a> </li>
-            <li class='option-three'> <a class='nav-option' href="#projects">Projects</a> </li>
-            <li class='option-four'> <a class='nav-option' href="#skills">Skills</a> </li>            
-        </ul>    
-    </section>
+<section id='nav-btn'>        
+    <div id='semi-circle-btn'></div>
+    <ul>
+        <li class='option-one'> <a class='nav-option' href="#aboutMe">About Me</a> </li>
+        <li class='option-two'> <a class='nav-option' href="#resume"> Resume</a> </li>
+        <li class='option-three'> <a class='nav-option' href="#projects">Projects</a> </li>
+        <li class='option-four'> <a class='nav-option' href="#skills">Skills</a> </li>            
+    </ul>    
+</section>
 
-    <section id='name-loop'> 
-        <h1 id="header"></h1>            
-    </section>
+<section id='name-loop'> 
+    <h1 id="header"></h1>            
+</section>
+
+<!-- place toggle switch -->
+
+<section id='aboutMe'> 
+<h3 class='section-title'>Some things to know about me...</h3>
+<div class='slideshow-container'>         
+    <div class='mySlides-1 fade'>            
+        <img src="/photo_assets/first.jpeg">    
+        <div class="text"> Hi! I'm Jon and they call me Fezz. An awesome Bartender, and awesome Dev. I love being a creative! My github graph is only grey when I'm... </div>
+        <!-- <p>Intro</p> -->
+    </div>
     
-    <!-- place toggle switch -->
+    <div class='mySlides-1 fade'>
+        <img src="photo_assets/barshot.JPG">                    
+        <div class="text">Shaking it up for the masses! Bartending is a lot like coding in the way of problem solving. There are so many variables to consider for a guest before you make a move. Just one component out of place will ruin your product! </div>
+        <!-- <p></p> -->
+    </div>
+    
+    <div class="mySlides-1 fade">
+        <img src="photo_assets/goofball.jpeg">                     
+        <div class="text">Truly my passion is set in Tech. The limits of creativity in bartending are always dependent on products made by others and the availability of ingredients. Code definitely never suffers such limitation. Collaboration, creative thinking and grit are all you need to code! It's magical to see something in your mind and bring it to life on the screen. I can't help but have fun with it!</div>
+        <!-- <p></p>             -->
+    </div>
 
-    <section id='aboutMe'> 
-    <h3 class='section-title'>Some things to know about me...</h3>
-    <div class='slideshow-container'>         
-        <div class='mySlides-1 fade'>            
-            <img src="/photo_assets/first.jpeg">    
-            <div class="text"> Hi! I'm Jon and they call me Fezz. An awesome Bartender, and awesome Dev. I love being a creative! My github graph is only grey when I'm... </div>
-            <!-- <p>Intro</p> -->
+    <div class="mySlides-1 fade">
+        <img src="photo_assets/groudshot.JPG">                     
+        <div class="text"> I love it when a team comes together! Here's the team after crushing a 400 guest party with a full cocktail bar.</div>
+        <!-- <p></p>             -->
+    </div>
+
+    <div class="mySlides-1 fade">
+        <img src="photo_assets/last.jpeg">                     
+        <div class="text">Once again, I'm Jon and they call me Fezz. I look forward to being a part of your team!</div>
+        <!-- <p></p>             -->
+    </div>
+    
+    <a class="back" onclick="slideToDa(-1, 'mySlides-1')"> &#10094; 
+        <span class='bigArrow'>&#10094;</span>
+    </a>
+    <a class="next bigArrow" onclick="slideToDa(1, 'mySlides-1')"> &#10095;
+        <span> &#10095; </span>
+    </a>
+    
+</div>
+</section>
+
+<!-- html and css taken from w3schools => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline-->
+<section id='resume'>
+    
+    <div class="timeline"></div>
+    <div class="container right">
+        <div class="content">
+            <h2>2021 | <a href="https://www.pursuit.org/fellowship?gclid=Cj0KCQjwrsGCBhD1ARIsALILBYoZZTe0XdzsD0GkFi90K4dVpBijEedjBi69BZTan0FS3X1s1DfZiOUaAh4PEALw_wcB">Pursuit</a></h2>
+            <p>12-month, Google-funded software engineering fellowship with a 9% acceptance rate (out of 1500+ applicants) whose graduates are prepared with both technical and professional skills and have been hired as developers at leading companies such as Pinterest, JP Morgan, and Spotify.</p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h2>2020 | <a href='https://www.mayamezcal.com/'>MayaMezcal</a>  </h2>
+            <p>300 cover Mezcal & Tequila bar service and Pueblo/Moroccon fare. Suit and tie atmosphere speakeasy serving cocktails crafted by Mixologist Kristo Tomingas.
+            </p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>2019 | <a href="https://www.littlespain.com/"/>Mercado Little Spain</a></h2>
+            <p>Trained under Master Sommelier AJ Ojeda-Pons, Master Sommelier Andy Myers, and esteemed cocktail innovator Miguel Lancha of BarMini. Serving Spanish wines and cocktails at 4000 covers nightly.</p>
+        </div>
+    </div>        
+    <div class="container left">
+        <div class="content">
+            <h2>2018 | <a href="https://www.facebook.com/nighthawkstroy">Nighthawks</a></h2>
+            <p>Weekend Bartender handling 300 covers handling service and counter solo. Implemented a cost-effective weekly rotating cocktail menu. Prepared all ingredients for beverage service, including syrups, infusions and garnishes.</p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>2017 | <a href="https://www.spamirbeau.com/">Spa Mirbeau </a>    </h2>
+            <p>Reworked wine list in tandem with Execute Chef. Conducted performance reviews. Assisted the team in meeting sales, stock loss, labour objectives and margin goals to increase profitability.
+            </p>
+        </div>
+</section> <!--resume-->
+
+<section id='projects'>        
+    <h3 class='section-title'>Projects</h3>
+    <div class='slideshow-container'>
+        <div class='mySlides-2 fade'>
+            <img src="photo_assets/snowman.gif">    
+            <div class="text"> An exhilarating fast paced word game of chance and wits. Fill in the blanks correctly to win!</div>
+            <p>SnowMan</p>
         </div>
         
-        <div class='mySlides-1 fade'>
-            <img src="photo_assets/barshot.JPG">                    
-            <div class="text">Shaking it up for the masses! Bartending is a lot like coding in the way of problem solving. There are so many variables to consider for a guest before you make a move. Just one component out of place will ruin your product! </div>
-            <!-- <p></p> -->
+        <div class='mySlides-2 fade'>
+            <img src="photo_assets/dragonrend.gif">                     
+            <div class="text"> Be the guiding voice of a young hero as they set out into the world on an epic adventure!</div>
+            <p>DragonRend</p>
         </div>
         
-        <div class="mySlides-1 fade">
-            <img src="photo_assets/goofball.jpeg">                     
-            <div class="text">Truly my passion is set in Tech. The limits of creativity in bartending are always dependent on products made by others and the availability of ingredients. Code definitely never suffers such limitation. Collaboration, creative thinking and grit are all you need to code! It's magical to see something in your mind and bring it to life on the screen. I can't help but have fun with it!</div>
-            <!-- <p></p>             -->
-        </div>
-
-        <div class="mySlides-1 fade">
-            <img src="photo_assets/groudshot.JPG">                     
-            <div class="text"> I love it when a team comes together! Here's the team after crushing a 400 guest party with a full cocktail bar.</div>
-            <!-- <p></p>             -->
-        </div>
-
-        <div class="mySlides-1 fade">
-            <img src="photo_assets/last.jpeg">                     
-            <div class="text">Once again, I'm Jon and they call me Fezz. I look forward to being a part of your team!</div>
-            <!-- <p></p>             -->
+        <div class="mySlides-2 fade">
+            <img src="photo_assets/scd.gif">                    
+            <div class="text">Ice Cream with attitude!</div>
+            <p>SnowMan</p>            
         </div>
         
-        <a class="back" onclick="slideToDa(-1, 'mySlides-1')"> &#10094; 
+        <a class="back" onclick="slideToDa(-1, 'mySlides-2')"> &#10094; 
             <span class='bigArrow'>&#10094;</span>
         </a>
-        <a class="next bigArrow" onclick="slideToDa(1, 'mySlides-1')"> &#10095;
+        <a class="next bigArrow" onclick="slideToDa(1, 'mySlides-2')"> &#10095;
             <span> &#10095; </span>
-        </a>
-        
+        </a>            
     </div>
-    </section>
-    
-    <!-- html and css taken from w3schools => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_timeline-->
-    <section id='resume'>
-        
-        <div class="timeline"></div>
-        <div class="container right">
-            <div class="content">
-                <h2>2021 | <a href="https://www.pursuit.org/fellowship?gclid=Cj0KCQjwrsGCBhD1ARIsALILBYoZZTe0XdzsD0GkFi90K4dVpBijEedjBi69BZTan0FS3X1s1DfZiOUaAh4PEALw_wcB">Pursuit</a></h2>
-                <p>12-month, Google-funded software engineering fellowship with a 9% acceptance rate (out of 1500+ applicants) whose graduates are prepared with both technical and professional skills and have been hired as developers at leading companies such as Pinterest, JP Morgan, and Spotify.</p>
-            </div>
-        </div>
-        <div class="container left">
-            <div class="content">
-                <h2>2020 | <a href='https://www.mayamezcal.com/'>MayaMezcal</a>  </h2>
-                <p>300 cover Mezcal & Tequila bar service and Pueblo/Moroccon fare. Suit and tie atmosphere speakeasy serving cocktails crafted by Mixologist Kristo Tomingas.
-                </p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>2019 | <a href="https://www.littlespain.com/"/>Mercado Little Spain</a></h2>
-                <p>Trained under Master Sommelier AJ Ojeda-Pons, Master Sommelier Andy Myers, and esteemed cocktail innovator Miguel Lancha of BarMini. Serving Spanish wines and cocktails at 4000 covers nightly.</p>
-            </div>
-        </div>        
-        <div class="container left">
-            <div class="content">
-                <h2>2018 | <a href="https://www.facebook.com/nighthawkstroy">Nighthawks</a></h2>
-                <p>Weekend Bartender handling 300 covers handling service and counter solo. Implemented a cost-effective weekly rotating cocktail menu. Prepared all ingredients for beverage service, including syrups, infusions and garnishes.</p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>2017 | <a href="https://www.spamirbeau.com/">Spa Mirbeau </a>    </h2>
-                <p>Reworked wine list in tandem with Execute Chef. Conducted performance reviews. Assisted the team in meeting sales, stock loss, labour objectives and margin goals to increase profitability.
-                </p>
-            </div>
-    </section> <!--resume-->
+</section>
 
-    <section id='projects'>        
-        <h3 class='section-title'>Projects</h3>
-        <div class='slideshow-container'>
-            <div class='mySlides-2 fade'>
-                <img src="photo_assets/snowman.gif">    
-                <div class="text"> An exhilarating fast paced word game of chance and wits. Fill in the blanks correctly to win!</div>
-                <p>SnowMan</p>
-            </div>
-            
-            <div class='mySlides-2 fade'>
-                <img src="photo_assets/dragonrend.gif">                     
-                <div class="text"> Be the guiding voice of a young hero as they set out into the world on an epic adventure!</div>
-                <p>DragonRend</p>
-            </div>
-            
-            <div class="mySlides-2 fade">
-                <img src="photo_assets/scd.gif">                    
-                <div class="text">Ice Cream with attitude!</div>
-                <p>SnowMan</p>            
-            </div>
-            
-            <a class="back" onclick="slideToDa(-1, 'mySlides-2')"> &#10094; 
-                <span class='bigArrow'>&#10094;</span>
+<section id="skills">        
+    <div class='skills-container'>
+        <i class="devicon-javascript-plain"></i>
+        <i class="devicon-html5-plain-wordmark"></i>
+        <i class="devicon-css3-plain-wordmark"></i>
+        <i class="devicon-react-original-wordmark"></i>
+        <i class="devicon-nodejs-plain"></i>
+        <i class="devicon-postgresql-plain-wordmark"></i>
+        <i class="devicon-git-plain"></i>
+        <i class="devicon-npm-original-wordmark"></i>                
+    </div>            
+</section> <!--skills-->
+
+<section id='ping-box'>
+    <div id='ping-container' href='mailto:jonnicwolf@gmail.com'>            
+        <a href="mailto:jonnicwolf@gmail.com">PING ME!</a>          
+    </div>
+</section>
+
+<section id="contacts">            
+    <ul>
+        <li>
+            <a href="https://twitter.com/Fezz_dev">
+                <i class="devicon-twitter-original colored"></i>
             </a>
-            <a class="next bigArrow" onclick="slideToDa(1, 'mySlides-2')"> &#10095;
-                <span> &#10095; </span>
-            </a>            
-        </div>
-    </section>
-    
-    <section id="skills">        
-        <div class='skills-container'>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-html5-plain-wordmark"></i>
-            <i class="devicon-css3-plain-wordmark"></i>
-            <i class="devicon-react-original-wordmark"></i>
-            <i class="devicon-nodejs-plain"></i>
-            <i class="devicon-postgresql-plain-wordmark"></i>
-            <i class="devicon-git-plain"></i>
-            <i class="devicon-npm-original-wordmark"></i>                
-        </div>            
-    </section> <!--skills-->
-
-    <section id='ping-box'>
-        <div id='ping-container' href='mailto:jonnicwolf@gmail.com'>            
-            <a href="mailto:jonnicwolf@gmail.com">PING ME!</a>          
-        </div>
-    </section>
-
-    <section id="contacts">            
-        <ul>
-            <li>
-                <a href="https://twitter.com/Fezz_dev">
-                    <i class="devicon-twitter-original colored"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/jonnicwolf">
-                    <i class="devicon-github-original"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://linkedin.com/in/jonathan-narine-852847200">
-                    <i class="devicon-linkedin-plain"></i>
-                </a>
-            </li>                    
-        </ul>
-    </section>
-    <footer>
-        <div>&#169; 2021 Jonathan N. W. Narine </div>
-        
-    </footer>
-
-</div>
+        </li>
+        <li>
+            <a href="https://github.com/jonnicwolf">
+                <i class="devicon-github-original"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://linkedin.com/in/jonathan-narine-852847200">
+                <i class="devicon-linkedin-plain"></i>
+            </a>
+        </li>                    
+    </ul>
+</section>
+<footer>
+    <div>&#169; 2021 Jonathan N. W. Narine </div>    
+</footer>
 <!-- flex-wrapper-2 -->
 
 </body>

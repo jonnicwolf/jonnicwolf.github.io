@@ -27,46 +27,7 @@ body {
 }
 
 
-#contacts ul {
-  display: flex;
-  justify-content:center;
-  list-style-type: none;  
-}
 
-#contacts li {
-  /* height: 210px; */
-  padding: 30px 60px 30px 60px;
-}
-
-#contacts a {  
-  text-decoration: none;  
-}
-
-#contacts i {  
-  /* font-size: 90px;  */
-  color: gold;
-}
-
-#contacts i:hover {  
-  background-color: crimson;
-  border: 5px solid gold;
-  padding: 20px;
-  color: gold;
-  /* border shape */
-  border-radius: 70px 70px 70px 70px;  
-}
-
-.devicon-twitter-original {
-  font-size: 100px !important;
-}
-
-.devicon-linkedin-plain {
-  font-size: 100px !important;
-}
-
-.devicon-github-original {
-  font-size: 100px !important;
-}
 
 /* make a semi circle */
 #nav-btn {    
@@ -470,11 +431,65 @@ color: green;
 }
 
 #ping-box a {  
+  /* margin-top: 150px; */
   align-self: center;
   text-align: center;
   width: 50%;  
   text-decoration-line: none;
   color: gold;
+}
+#contacts ul {
+  margin-top: 150px;
+  display: flex;
+  justify-content:center;
+  list-style-type: none;  
+}
+
+#contacts li {
+  /* height: 210px; */
+  padding: 30px 60px 30px 60px;
+}
+
+#contacts a {  
+  text-decoration: none;  
+}
+
+#contacts i {  
+  /* font-size: 90px;  */
+  color: gold;
+}
+
+#contacts i:hover {  
+  background-color: crimson;
+  border: 5px solid gold;
+  padding: 20px;
+  color: gold;
+  /* border shape */
+  border-radius: 70px 70px 70px 70px;  
+}
+
+.devicon-twitter-original {
+  font-size: 100px !important;
+}
+
+.devicon-linkedin-plain {
+  font-size: 100px !important;
+}
+
+.devicon-github-original {
+  font-size: 100px !important;
+}
+
+footer {
+  margin-top: 150px;
+  font-family: "Bungee Hairline";
+  font-size: 80px;
+  color: rgb(0, 255, 255);
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  /* background-color: rgb(0, 255, 255); */
+  border-top: 2px solid rgb(0, 255, 255);
 }
 
 @-webkit-keyframes fade {

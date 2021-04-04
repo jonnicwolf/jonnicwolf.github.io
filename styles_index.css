@@ -1,5 +1,4 @@
-body {
-  
+body {  
   background: #0C0529;  
   color: #FF0000;    
 }
@@ -255,27 +254,31 @@ body {
 
 #resume h2 {
   font-family: 'bungee Hairline';
+  font-size: 35px;
 }
 
 #resume a {
   text-decoration-line: none;
   color: gold;
+  
 }
 
 #resume a:hover {
-  font-family: 'Bungee Hairline', cursive;
+  font-family: 'Bungee', cursive;
   background-color: crimson;
   border: 2px solid gold;
   color: gold;
   transition: 0.3s;
 }
 
-/* The actual timeline (the vertical ruler)*/
+
 .container {
 /* box-sizing: border-box; */
  height: 150px;    
+ 
 }
 
+/* The actual timeline (the vertical ruler)*/
 .timeline {
   position: absolute;
   left: calc(50% - 5px);  
@@ -298,6 +301,7 @@ color: crimson;
 
 .timeline h2 a {
 text-decoration-line: none;
+/* font-size: 60px; */
 }
 
 /* Container around content */
@@ -371,11 +375,15 @@ color: green;
 /* The actual content */
 .content {
   font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
   padding: 20px 30px;
+  /* height: 100px; */
   color: rgba(0, 255, 255);
   position: relative;
-  border-radius: 6px;
+  border-radius: 15px;
   border: 2px solid rgba(0, 255, 255);
+  height: 180px;
+  overflow-y: auto;
 }
 
 #projects {

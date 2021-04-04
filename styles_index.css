@@ -227,8 +227,7 @@ body {
   height: 110px;
   width: 1000px;
   overflow-x: hidden;
-  overflow-y: auto;
-  
+  overflow-y: auto;  
 }
 
 .mySlides-1 {  
@@ -410,12 +409,14 @@ color: green;
 
 .mySlides-2 p {  
   color: aqua;
-  font-size: 25px;  
-  position: absolute;
-  bottom: 15px;  
-  font-family: 'Bungee Hairline', cursive;
+  font-size: 30px;  
+  position: absolute;    
+  bottom: 10px;  
+  font-family: 'Bungee', cursive;
   text-align: center;
 }
+
+
 
 
 .skills-container {

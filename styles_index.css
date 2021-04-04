@@ -364,9 +364,6 @@ color: green;
   text-align: center;
 }
 
-
-
-
 .skills-container {
   display: flex;
   justify-content: center;
@@ -378,7 +375,6 @@ color: green;
   font-size: 150px;
   padding: 10px;
   color: rgba(0, 255, 255);
-
 }
 
 /* Fading animation */
@@ -484,14 +480,19 @@ footer {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
 @media only screen and (max-width: 1025px){
-  #name-loop {
-    font-size: 40px;
+  body {
+    left: 20px;
   }
 
-  #flex-wrapper-2 {
-    width: 100px;
+  #name-loop {
+    font-size: 60px;
   }
+
+  #skills i {  
+    font-size: 100px;  
+  }  
 }
 
 @media only screen and (max-width: 800px){

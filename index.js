@@ -60,6 +60,42 @@ pingBox.addEventListener('click', () => {
    document.querySelector('#ping-box a').click()  
 })
 
+const section = document.querySelector('#resume')
+const bubble = document.getElementsByClassName('content')
+console.log(bubble)
+console.log(typeof section)
+bubble.addEventListener('mouseover', () => {
+  section.forEach((elem) => {
+    if (elem.class.includes('content')) {
+        const hoverEffect = document.querySelector('.content h2 a').style
+          hoverEffect.fontFamily = 'Bungee'
+          hoverEffect.backgroundColor = 'crimson'
+          hoverEffect.border = '2px solid gold'
+          hoverEffect.color = 'gold'
+          hoverEffect.transition = '0.3s'          
+    } else {
+      console.log('yo')
+    }
+  })
+  console.log(section)
+  console.log('mouseover')
+})
+
+
+
+
+// const workLink = document.querySelectorAll('.content')
+// console.log(workLink)
+// workLink.addEventListener('mouseover', () => {
+//   const hoverEffect = document.querySelector('.content h2 a').style
+//   hoverEffect.fontFamily = 'Bungee'
+//   hoverEffect.backgroundColor = 'crimson'
+//   hoverEffect.border = '2px solid gold'
+//   hoverEffect.color = 'gold'
+//   hoverEffect.transition = '0.3s'
+//   console.log('mouseover')
+// })
+
 
 
 

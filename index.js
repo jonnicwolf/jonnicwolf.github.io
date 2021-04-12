@@ -60,6 +60,8 @@ pingBox.addEventListener('click', () => {
    document.querySelector('#ping-box a').click()  
 })
 
+
+
 // const section = document.querySelector('#resume')
 // const bubble = document.getElementsByClassName('content')
 // console.log(bubble)

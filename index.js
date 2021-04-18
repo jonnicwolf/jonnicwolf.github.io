@@ -101,7 +101,16 @@ pingBox.addEventListener('click', () => {
 
 
 
-
+axios.get('https://api.github.com/orgs/joinpursuit/repos')
+    .then(response => {
+      let arr = response.data
+      console.log(arr)
+      // let languages = arr.map(() =>console.log(arr.language))
+      // for (let i = 0; i < arr.length; i++) {
+      //   console.log(arr[i].language)      
+      // }
+    })
+  
 
 
 

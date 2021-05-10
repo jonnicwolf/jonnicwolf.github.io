@@ -1,57 +1,57 @@
-body {  
+body {
   display: flex;
   justify-content: center;
   flex-direction: column;
   /* display: grid;
   grid-template-columns: 1;
   grid-template-rows: 9; */
-  background: #0C0529;  
-  color: #FF0000;    
+  background: #0c0529;
+  color: #ff0000;
 }
 
-.sections-container {  
+.sections-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #0C0529;
-  color: #FF0000;  
+  background: #0c0529;
+  color: #ff0000;
 }
 
 .section-title {
-  font-family: 'bungee hairline';
+  font-family: "bungee hairline";
   font-size: 40px;
-  color: rgb(0, 255, 255)
+  color: rgb(0, 255, 255);
 }
 
 #name-loop {
   display: flex;
   justify-content: center;
-  font-family: 'Bungee Shade';
+  font-family: "Bungee Shade";
   font-size: 70px;
   margin: auto;
   /* border: 2px solid white; */
 }
 
 /* make a semi circle */
-#nav-btn {    
+#nav-btn {
   height: 500px;
   width: 500px;
   left: -40px;
-  top: -200px; 
-  transform: rotate(325deg);  
-  text-align: center;      
+  top: -200px;
+  transform: rotate(325deg);
+  text-align: center;
   position: fixed;
-  z-index: 99;  
+  z-index: 99;
 }
 
-#semi-circle-btn {  
+#semi-circle-btn {
   background-color: gold;
   position: sticky;
-  height: 200px; 
-  width: 200px; 
-  border-radius: 100px 100px 100px 100px;   
+  height: 200px;
+  width: 200px;
+  border-radius: 100px 100px 100px 100px;
   opacity: 0.8;
-  transition: 0.3s;    
+  transition: 0.3s;
 }
 
 #semi-circle-btn:hover {
@@ -60,8 +60,8 @@ body {
 }
 
 /* turn list items right side up */
-#nav-btn ul{
-  list-style-type: none;  
+#nav-btn ul {
+  list-style-type: none;
   text-decoration-line: none;
   display: none;
 }
@@ -69,43 +69,42 @@ body {
 .nav-option {
   display: grid;
   word-wrap: normal;
-  font-family: 'Bungee', cursive;
-  font-size:30px;
+  font-family: "Bungee", cursive;
+  font-size: 30px;
   text-decoration-line: none;
   color: gold;
-  padding: 5px;  
+  padding: 5px;
 }
 
 .nav-option:hover {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   background-color: crimson;
   border: 2px solid gold;
-  
+
   color: gold;
 }
 
-.option-one { 
-  height: 30px; 
-  width: 200px;   
+.option-one {
+  height: 30px;
+  width: 200px;
   padding: 5px;
 }
 
 .option-two {
-  height: 30px; 
-  width: 200px;   
+  height: 30px;
+  width: 200px;
   padding: 5px;
-  
 }
 
 .option-three {
-  height: 30px; 
-  width: 200px;   
+  height: 30px;
+  width: 200px;
   padding: 5px;
 }
 
 .option-four {
   height: 30px;
-  width: 200px;  
+  width: 200px;
   padding: 5px;
 }
 
@@ -114,7 +113,7 @@ body {
 }
 
 /* Slideshow container */
-.slideshow-container {   
+.slideshow-container {
   /* max-width: 1000px; */
   max-width: 1200px;
   position: relative;
@@ -124,7 +123,7 @@ body {
   align-items: center;
 }
 
-#aboutMe img{  
+#aboutMe img {
   /* border: 2px solid white; */
   align-self: center;
   align-content: center;
@@ -135,7 +134,8 @@ body {
 
 /* (Open!(These enclosed handle both carousels)) */
 /* Next & previous buttons */
-.back, .next {
+.back,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -162,7 +162,8 @@ body {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.back:hover, .next:hover {
+.back:hover,
+.next:hover {
   background-color: crimson;
 }
 
@@ -173,54 +174,56 @@ body {
   font-size: 30px;
   padding: 10px 20px 30px;
   position: absolute;
-  bottom: 10px;  
-  font-family: 'Open Sans', sans-serif;  
+  bottom: 10px;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
-  margin: -130px; 
+  margin: -130px;
   height: 110px;
   width: 1000px;
   overflow-x: hidden;
-  overflow-y: auto;  
+  overflow-y: auto;
 }
 
-.mySlides-1 {  
+.mySlides-1 {
   display: flex;
   justify-content: center;
-  height: 790px;  
+  height: 790px;
 }
 
-.mySlides-1 p {  
+.mySlides-1 p {
   color: aqua;
-  font-size: 30px;  
-  position: absolute;  
-  font-family: 'Bungee', cursive;
+  font-size: 30px;
+  position: absolute;
+  font-family: "Bungee", cursive;
   text-align: center;
 }
 
 /* (Close!()) */
 
 #resume {
-  max-width: 2500px;
+  /* max-width: 2500px; */
   align-self: center;
   /* border: 2px solid white; */
   position: relative;
   margin-bottom: 100px;
+  padding-inline: inherit;
+  padding-inline-start: inherit;
+  padding-inline-end: inherit;
 }
 
 #resume h2 {
   /* border: 2px solid white; */
-  font-family: 'bungee Hairline';
+  font-family: "bungee Hairline";
   font-size: 35px;
 }
 
 #resume a {
   text-decoration-line: none;
   color: gold;
-  
 }
 
 #resume a:hover {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   background-color: crimson;
   border: 2px solid gold;
   color: gold;
@@ -228,34 +231,34 @@ body {
 }
 
 .container {
-/* box-sizing: border-box; */
- height: 150px; 
+  /* box-sizing: border-box; */
+  height: 150px;
 }
 
 /* The actual timeline (the vertical ruler)*/
 .timeline {
   position: absolute;
-  left: calc(50% - 5px);  
+  left: calc(50% - 5px);
   width: 10px;
-  height: 835px;  
+  height: 835px;
   background-color: crimson;
-} 
+}
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-content: '';
-position: absolute;
-width: 6px;
-top: 0;
-bottom: 0;
-left: 50%;
-margin-left: -3px;
-color: crimson;
+  content: "";
+  position: absolute;
+  width: 6px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  color: crimson;
 }
 
 .timeline h2 a {
-text-decoration-line: none;
-/* font-size: 60px; */
+  text-decoration-line: none;
+  /* font-size: 60px; */
 }
 
 /* Container around content */
@@ -266,17 +269,17 @@ text-decoration-line: none;
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;  
+  width: 50%;
 }
 
 /* The circles on the timeline */
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: #0C0529;
+  background-color: #0c0529;
   border: 4px solid gold;
   top: 15px;
   border-radius: 50%;
@@ -318,7 +321,7 @@ text-decoration-line: none;
   left: 30px;
   border: medium solid rgb(0, 255, 255);
   border-width: 10px 10px 10px 0;
-  border-color: transparent rgb(0, 255, 255) ;
+  border-color: transparent rgb(0, 255, 255);
 }
 
 /* Fix the circle for containers on the right side */
@@ -329,7 +332,7 @@ text-decoration-line: none;
 /* The actual content */
 .content {
   /* border: 2px solid white; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 25px;
   padding: 20px 30px;
   /* height: 100px; */
@@ -343,7 +346,7 @@ text-decoration-line: none;
 
 #resume-btn-container img {
   height: 100px;
-  background-color: rgb(0, 255, 255) ;
+  background-color: rgb(0, 255, 255);
   fill: red;
   /* border: 2px solid rgba(0, 255, 255); */
   border-radius: 15px;
@@ -357,32 +360,32 @@ text-decoration-line: none;
   padding: 10px;
 }
 
-#projects img {  
+#projects img {
   align-self: center;
-  align-content: center;  
+  align-content: center;
   padding: 0px 300px 0px 300px;
 }
 
-#projects video {  
+#projects video {
   height: 400px;
   width: 800px;
   align-self: center;
-  align-content: center;  
+  align-content: center;
   padding: 0px 300px 0px 300px;
 }
 
-.mySlides-2 {  
+.mySlides-2 {
   display: flex;
   justify-content: center;
   height: 600px;
 }
 
-.mySlides-2 p {  
+.mySlides-2 p {
   color: aqua;
-  font-size: 30px;  
-  position: absolute;    
-  bottom: 10px;  
-  font-family: 'Bungee', cursive;
+  font-size: 30px;
+  position: absolute;
+  bottom: 10px;
+  font-family: "Bungee", cursive;
   text-align: center;
 }
 
@@ -391,10 +394,10 @@ text-decoration-line: none;
   display: flex;
   justify-content: center;
   margin-top: 200px;
-  margin-bottom:80px;
+  margin-bottom: 80px;
 }
 
-#skills i {  
+#skills i {
   font-size: 150px;
   padding: 10px;
   color: rgba(0, 255, 255);
@@ -417,30 +420,30 @@ text-decoration-line: none;
 #ping-container {
   /* left: 30%; */
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
-  font-family: 'Bungee Outline', cursive;
+  font-family: "Bungee Outline", cursive;
   font-size: 80px;
   height: 200px;
   width: 900px;
-  padding: 20px 30px; 
+  padding: 20px 30px;
   position: relative;
-  border-radius: 6px;  
+  border-radius: 6px;
   border: 2px solid rgba(0, 255, 255);
 }
 
-#ping-container:hover{
-  font-family: 'Bungee Inline', cursive;
+#ping-container:hover {
+  font-family: "Bungee Inline", cursive;
   background-color: crimson;
   border: 2px solid gold;
   color: gold;
   transition: 0.3s;
 }
 
-#ping-box a {    
+#ping-box a {
   align-self: center;
   text-align: center;
-  width: 50%;  
+  width: 50%;
   text-decoration-line: none;
   color: gold;
 }
@@ -449,28 +452,28 @@ text-decoration-line: none;
   /* border: 2px solid white; */
   margin-top: 150px;
   display: flex;
-  justify-content:center;
-  list-style-type: none;  
+  justify-content: center;
+  list-style-type: none;
 }
 
-#contacts li {  
+#contacts li {
   padding: 30px 60px 30px 60px;
 }
 
-#contacts a {  
-  text-decoration: none;  
+#contacts a {
+  text-decoration: none;
 }
 
-#contacts i {    
+#contacts i {
   color: gold;
 }
 
-#contacts i:hover {  
+#contacts i:hover {
   background-color: crimson;
   border: 5px solid gold;
   padding: 20px;
-  color: gold;  
-  border-radius: 70px 70px 70px 70px;  
+  color: gold;
+  border-radius: 70px 70px 70px 70px;
 }
 
 .devicon-twitter-original {
@@ -493,7 +496,7 @@ footer {
   color: rgb(0, 255, 255);
   text-align: center;
   height: 200px;
-  width: 100%;  
+  width: 100%;
   border-top: 2px solid rgb(0, 255, 255);
 }
 
@@ -502,21 +505,27 @@ section {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@media only screen and (max-width: 1025px){
-
+@media only screen and (max-width: 1025px) {
   section {
     width: 900px;
     vertical-align: middle;
-    
   }
 
   .slideshow-container {
@@ -526,7 +535,7 @@ section {
   .fade {
     width: 900px;
   }
-  
+
   .fade img {
     width: 900px;
   }
@@ -535,23 +544,19 @@ section {
     font-size: 60px;
   }
 
-  #skills i {  
-    font-size: 100px;  
-  }  
+  #skills i {
+    font-size: 100px;
+  }
 }
 
 video::-webkit-media-controls {
   display: none;
 }
 
-@media only screen and (max-width: 800px){
-  
-
+@media only screen and (max-width: 800px) {
   #name-loop {
-    font-size:50px;
+    font-size: 50px;
   }
-
-  
 }
 
 /* @media (orientation: landscape) {
@@ -561,30 +566,3 @@ video::-webkit-media-controls {
 @media (orientation: portrait){
   
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
